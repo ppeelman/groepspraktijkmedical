@@ -8,58 +8,93 @@
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
     <title>
-      Raadplegingen | Groepspraktijk Medical
+      Groepspraktijk Medical | Huisartsen met een hart
     </title>
   </head>
+
   <body>
     <div class="sidenav">
       <input type="checkbox" class="sidenav__checkbox" id="sidenav-toggle" />
-      <label class="sidenav__button" for="sidenav-toggle">
-        <div></div>
+      <label
+        class="sidenav__button sidenav__button--navbar"
+        for="sidenav-toggle"
+      >
+        <div class="sidenav__icon"></div>
       </label>
 
-      <div class="sidenav__background"></div>
+      <div class="sidenav__background sidenav__background--navbar "></div>
 
-      <ul class="sidenav__list">
-        <li class="sidenav__item">
-          <a href="index.html" class="sidenav__link">Home</a>
-        </li>
-        <li class="sidenav__item">
-          <a href="raadplegingen.html" class="sidenav__link">Raadplegingen</a>
-        </li>
-        <li class="sidenav__item">
-          <a href="huisbezoeken.html" class="sidenav__link">Huisbezoeken</a>
-        </li>
-        <li class="sidenav__item">
-          <a href="gmd.html" class="sidenav__link">Globaal Medisch Dossier</a>
-        </li>
-        <li class="sidenav__item">
-          <a href="attesten.html" class="sidenav__link"
-            >Attesten, voorschriften...</a
-          >
-        </li>
-        <li class="sidenav__item">
-          <a href="wachtdienst.html" class="sidenav__link">Wachtdienst</a>
-        </li>
-      </ul>
+      <div class="sidenav__list-container">
+        <ul class="sidenav__list">
+          <li class="sidenav__item">
+            <a href="index.html" class="sidenav__link">Home</a>
+          </li>
+          <li class="sidenav__item">
+            <a href="raadplegingen.html" class="sidenav__link">Raadplegingen</a>
+          </li>
+          <li class="sidenav__item">
+            <a href="huisbezoeken.html" class="sidenav__link">Huisbezoeken</a>
+          </li>
+          <li class="sidenav__item">
+            <a href="gmd.html" class="sidenav__link">Globaal Medisch Dossier</a>
+          </li>
+          <li class="sidenav__item">
+            <a href="attesten.html" class="sidenav__link"
+              >Attesten, voorschriften...</a
+            >
+          </li>
+          <li class="sidenav__item">
+            <a href="wachtdienst.html" class="sidenav__link">Wachtdienst</a>
+          </li>
+        </ul>
+      </div>
     </div>
-
-    <header class="header header--raadplegingen">
-      <div class="header__logo-box">
-        <img src="img/logo-white.svg" alt="logo" class="header__logo" />
-      </div>
-      <div class="header__text-box">
-        <h1 class="heading-primary">
-          <span class="heading-primary--main">Raadplegingen</span>
-        </h1>
-      </div>
+    <header>
+      <nav class="navbar">
+        <img src="img/logo.svg" alt="logo" class="navbar__logo" />
+        <h1 class="navbar__pageTitle">Raadplegingen</h1>
+      </nav>
     </header>
-    <main class="main"></main>
+    <main>
+      <section class="how-to-request-section">
+        <div class="hero"></div>
+        <div class="content"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo-box">
+          <img src="img/logo.svg" alt="Full logo" class="footer__logo" />
+        </div>
+        <div class="footer__navigation">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Home</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Raadplegingen</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Huisbezoeken</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Attesten etc.</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Wachtdienst</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__copyright">
+          Copyright 2019 © by Groepspraktijk Medical.
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

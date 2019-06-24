@@ -21,6 +21,11 @@
     background-color: $color-white;
     box-shadow: 0 3px 5px rgba($color-black, 0.4);
     cursor: pointer;
+
+    &--navbar {
+      top: 30px;
+      right: 30px;
+    }
   }
 
   // ===========================================================================
@@ -47,10 +52,15 @@
     background: linear-gradient(
       to right,
       rgba($color-primary-dark, 0.9),
-      rgba($color-primary-dark, 1)
+      rgba($color-primary-dark, 0.9)
     );
     transform: scale(1);
     transition: all 0.3s;
+
+    &--navbar {
+      top: 30px;
+      right: 30px;
+    }
   }
 
   &__checkbox:checked ~ &__background {
@@ -61,8 +71,9 @@
   //
   // Block: SIDENAV
   // Elements:
-  //          SIDENAV__LIST
-  //             SIDENAV__ITEM
+  //          SIDENAV__LIST-container
+  //            SIDENAV__LIST
+  //              SIDENAV__ITEM
   //                SIDENAV__LINK
   //
   // ===========================================================================
@@ -72,26 +83,25 @@
     right: 0;
     top: 0;
     z-index: 1500;
-    display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 0vw;
+    width: 100vw;
+    display: none;
   }
 
   &__list {
-    width: 0;
+    display: inline-block;
     overflow: hidden;
-    transition: all 0.3s;
-    transform: translateX(50%);
+    transition: opacity 0.5s linear;
+    opacity: 0;
   }
 
   &__checkbox:checked ~ &__list-container {
-    width: 100vw;
+    display: flex;
 
     & .sidenav__list {
-      transform: translateX(0%);
-      width: auto;
+      opacity: 1;
     }
   }
 

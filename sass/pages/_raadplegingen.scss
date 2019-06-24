@@ -1,0 +1,20 @@
+.how-to-request-section {
+  display: flex;
+
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        transparent 50%,
+        $color-grey-light 100%
+      ),
+      linear-gradient(to bottom, transparent 50%, $color-grey-light 100%),
+      url(../img/stethoscope.jpg);
+    background-size: cover;
+    flex: 0 0 50%;
+    height: 45rem;
+  }
+
+  .content {
+    flex: 0 0 50%;
+  }
+}
