@@ -1,0 +1,177 @@
+.sidenav {
+  &__checkbox {
+    display: none;
+  }
+
+  // z-indices used for UI components, from highest to lowest:
+  //
+  // 1. Button ------ 2000
+  // 2. List -------- 1500
+  // 3. Background -- 1000
+
+  &__button {
+    width: 7rem;
+    height: 7rem;
+    display: inline-block;
+    position: fixed;
+    top: 8rem;
+    right: 8rem;
+    z-index: 2000;
+    border-radius: 50%;
+    background-color: $color-white;
+    box-shadow: 0 3px 5px rgba($color-black, 0.4);
+    cursor: pointer;
+  }
+
+  // ===========================================================================
+  //
+  // Block: SIDENAV
+  // Element: SIDENAV__BACKGROUND
+  //
+  // The "SIDENAV__BACKGROUND" initially hides behind the "SIDENAV__BUTTON".
+  //
+  // #1 Width and height are slightly smaller than the width and the height of the button
+  // #2 Also using fixed positioning, but with top / right properties slightly moved to the center
+  //
+  // ===========================================================================
+
+  &__background {
+    width: 6rem; // #1
+    height: 6rem; // #1
+    display: inline-block;
+    position: fixed; // #2
+    top: 8.5rem; // #2
+    right: 8.5rem; //#2
+    z-index: 1000;
+    border-radius: 50%;
+    background: linear-gradient(
+      to right,
+      rgba($color-primary-dark, 0.9),
+      rgba($color-primary-dark, 1)
+    );
+    transform: scale(1);
+    transition: all 0.3s;
+  }
+
+  &__checkbox:checked ~ &__background {
+    transform: scale(100);
+  }
+
+  // ===========================================================================
+  //
+  // Block: SIDENAV
+  // Elements:
+  //          SIDENAV__LIST
+  //             SIDENAV__ITEM
+  //                SIDENAV__LINK
+  //
+  // ===========================================================================
+
+  &__list-container {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 0vw;
+  }
+
+  &__list {
+    width: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    transform: translateX(50%);
+  }
+
+  &__checkbox:checked ~ &__list-container {
+    width: 100vw;
+
+    & .sidenav__list {
+      transform: translateX(0%);
+      width: auto;
+    }
+  }
+
+  &__item {
+    list-style-type: none;
+    margin: 2rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-white;
+      font-size: 3rem;
+      padding: 1rem 1.5rem;
+      border: 2px solid transparent;
+      text-shadow: 1px 1px 2px rgba($color-black, 0.4);
+    }
+
+    &:hover,
+    &:active {
+      border: 2px solid $color-white;
+    }
+  }
+
+  // ==========================================================================
+  //
+  // Block: SIDENAV
+  // Element: SIDENAV__ICON
+  //
+  // ==========================================================================
+
+  &__icon {
+    top: 3.5rem;
+    left: 2rem;
+
+    &,
+    &::before,
+    &::after {
+      position: absolute;
+      background-color: $color-black;
+      width: 3rem;
+      height: 2px;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+    }
+
+    &::before {
+      top: -0.8rem;
+    }
+
+    &::after {
+      top: 0.8rem;
+    }
+  }
+
+  &__button:hover > &__icon::before {
+    top: -1rem;
+  }
+
+  &__button:hover > &__icon::after {
+    top: 1rem;
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    transform: rotate(135deg);
+    top: 0;
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    transform: rotate(-135deg);
+    top: 0;
+  }
+}

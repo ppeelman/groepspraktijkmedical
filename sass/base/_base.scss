@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //Reduce root font-size to 10px, use REM hereafter
+  box-sizing: border-box;
+  background-color: $color-white;
+}
+
+body {
+  background-color: $color-grey-light;
+}
