@@ -16,6 +16,7 @@
     </title>
   </head>
   <body class="homepage">
+    <a href="#maincontent" class="skipnav">Skip to main content</a>
     <div class="sidenav">
       <input type="checkbox" class="sidenav__checkbox" id="sidenav-toggle" />
       <label class="sidenav__button" for="sidenav-toggle">
@@ -24,7 +25,7 @@
 
       <div class="sidenav__background"></div>
 
-      <div class="sidenav__list-container">
+      <nav role="navigation" class="sidenav__list-container">
         <ul class="sidenav__list">
           <li class="sidenav__item">
             <a href="index.html" class="sidenav__link">Home</a>
@@ -47,7 +48,7 @@
             <a href="wachtdienst.html" class="sidenav__link">Wachtdienst</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>
 
     <header class="header">
@@ -56,24 +57,20 @@
       </div>
 
       <div class="header__text-box">
-        <h1 class="heading-primary">
-          <span class="heading-primary--main">Groepspraktijk Medical</span>
-        </h1>
-
+        <h1 class="heading-primary">Groepspraktijk Medical</h1>
         <a
           href="https://secure.introlution.be/mijnonlineagenda/?groepspraktijkmedical.be"
           class="btn btn--white btn--big btn--animated"
-          target="_blank"
           >Afspraak maken</a
         >
       </div>
     </header>
-    <main class="main">
+    <main class="main" id="maincontent">
       <section class="overview-section">
         <div class="make-appointment">
           <h2 class="heading-secondary ">Hoe een afspraak maken</h2>
           <p class="u-margin-bottom-lg">
-            Sinds kort is het mogelijk om <span class="u-bold">online</span> een
+            Sinds kort is het mogelijk om <strong class="u-bold">online</strong> een
             afspraak te maken. Hierdoor krijgt u een beter zicht op onze
             beschikbaarheden en wint u enige tijd. U plant een afspraak door op
             onderstaande link te drukken:
@@ -81,16 +78,15 @@
           <a
             href="https://secure.introlution.be/mijnonlineagenda/?groepspraktijkmedical.be"
             class="btn btn--blue btn--small u-margin-bottom-lg"
-            target="_blank"
             >Maak een afspraak</a
           >
           <p class="u-margin-bottom-lg">
             Indien u verkiest om dit niet online te doen kan u ook nog altijd
-            bellen naar <span class="u-bold">09 348 91 68</span>. Gelieve dit ‘s
+            bellen naar <strong class="u-bold">09 348 91 68</strong>. Gelieve dit ‘s
             morgens voor 12 uur te doen.
           </p>
           <p class="warning">
-            <span class="u-bold">Opgelet!</span> We aanvaarden momenteel geen
+            <strong class="u-bold">Opgelet!</strong> We aanvaarden momenteel geen
             nieuwe patienten.
           </p>
         </div>
@@ -120,9 +116,9 @@
           </div>
           <div class="panel__sub-panel panel__sub-panel--right">
             <div class="address">
-              <p class="address__title heading-secondary">
+              <h2 class="address__title heading-secondary">
                 Waar vindt u ons?
-              </p>
+              </h2>
               <a href="https://www.google.com/maps/place/Huisartsenpraktijk+Medical/@51.0996824,3.9857713,17z/data=!3m1!4b1!4m5!3m4!1s0x47c39b25c05e1059:0x26eb632090901551!8m2!3d51.0996791!4d3.98796"
               target="_blank" class="address__body u-margin-bottom-lg">
                 <span>H. - Hartlaan 1c</span>

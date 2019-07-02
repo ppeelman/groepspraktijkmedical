@@ -58,8 +58,8 @@
     transition: all 0.3s;
 
     &--navbar {
-      top: 30px;
-      right: 30px;
+      top: 35px;
+      right: 35px;
     }
   }
 
@@ -183,5 +183,35 @@
   &__checkbox:checked + &__button &__icon::after {
     transform: rotate(-135deg);
     top: 0;
+  }
+}
+
+.navbar {
+  height: 64px;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  opacity: 0.95;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  box-shadow: $shadow-medium;
+
+  &__logo {
+    margin-right: 38%;
+    height: 80%;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg)
+      brightness(106%) contrast(106%);
+  }
+
+  &__pageTitle {
+    color: $color-white;
+    font-weight: 400;
   }
 }

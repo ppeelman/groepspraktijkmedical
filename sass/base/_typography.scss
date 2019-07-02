@@ -9,26 +9,13 @@ body {
 .heading-primary {
   color: $color-white;
   margin-bottom: 4rem;
-
-  &--main {
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    backface-visibility: hidden;
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-  }
-
-  &--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.7rem;
-    animation-name: moveInRight;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-  }
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  backface-visibility: hidden;
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
 }
 
 .heading-secondary {
@@ -46,5 +33,22 @@ body {
     width: 50%;
     background-color: $color-primary-dark;
     margin-top: 1rem;
+  }
+}
+
+.icon-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+
+  &__icon {
+    fill: $color-primary-dark;
+    height: 5rem;
+    width: 5rem;
+  }
+
+  &__text {
+    margin-left: 4rem;
+    margin-bottom: 0;
   }
 }

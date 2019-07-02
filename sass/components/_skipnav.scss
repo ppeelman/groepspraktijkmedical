@@ -1,0 +1,19 @@
+.skipnav {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: -10000px;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+  z-index: 10000;
+  border-radius: 20px;
+  padding: 2rem;
+  font-size: 2rem;
+  background-color: red;
+  color: white;
+  outline-color: transparent;
+
+  &:focus {
+    top: 10px;
+  }
+}
