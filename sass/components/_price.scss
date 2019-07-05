@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     background-color: rgba($color-primary-dark, 0.7);
-    color: $color-white;
+    color: $color-grey-light;
     padding: $padding-medium 0;
 
     &__amount {
@@ -17,7 +17,7 @@
         border-radius: 50%;
         width: 12rem;
         height: 12rem;
-        background-color: $color-white;
+        background-color: $color-grey-light;
         display: flex;
         align-items: center;
         justify-content: center;
