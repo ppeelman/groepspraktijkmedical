@@ -318,8 +318,7 @@ body {
   flex-direction: column;
   align-items: center;
   color: #707070;
-  max-width: 25rem;
-  margin: 0 1.5rem; }
+  max-width: 25rem; }
   .icon-item--light {
     color: #f5f5f5; }
   .icon-item__icon {
@@ -366,8 +365,8 @@ body {
   height: 7rem;
   display: inline-block;
   position: fixed;
-  top: 8rem;
-  right: 8rem;
+  top: 6rem;
+  right: 6rem;
   z-index: 2000;
   border-radius: 50%;
   background-color: #ffffff;
@@ -382,8 +381,8 @@ body {
   height: 6rem;
   display: inline-block;
   position: fixed;
-  top: 8.5rem;
-  right: 8.5rem;
+  top: 6.5rem;
+  right: 6.5rem;
   z-index: 1000;
   border-radius: 50%;
   background: linear-gradient(to right, rgba(61, 79, 184, 0.9), rgba(61, 79, 184, 0.9));
@@ -523,7 +522,7 @@ body {
     background-color: inherit; }
 
 .homepage {
-  margin: 2rem; }
+  margin: 0rem; }
 
 .main {
   background-color: #f5f5f5; }
