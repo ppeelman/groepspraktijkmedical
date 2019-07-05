@@ -31,8 +31,13 @@ body {
     display: block;
     height: 2px;
     width: 50%;
-    background-color: $color-primary-dark;
+    color: inherit;
+    background-color: currentColor;
     margin-top: 1rem;
+  }
+
+  &--light {
+    color: $color-white;
   }
 }
 
