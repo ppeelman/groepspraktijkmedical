@@ -3,7 +3,7 @@
     justify-content: space-around;
     background-color: rgba($color-primary-dark, 0.7);
     color: $color-white;
-    padding: 5rem 0;
+    padding: $padding-medium 0;
 
     &__amount {
         display: flex;

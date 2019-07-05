@@ -1,7 +1,7 @@
 .warning {
   display: inline-block;
-  color: $color-warning;
-  border: 1px solid $color-warning;
-  padding: 0.5rem 1rem;
+  color: $color-white;
+  background-color: $color-warning;
+  padding: 1rem 2rem;
   border-radius: $border-radius-large;
 }
