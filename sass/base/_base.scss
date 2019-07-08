@@ -10,6 +10,26 @@ html {
   font-size: 62.5%; //Reduce root font-size to 10px, use REM hereafter
   box-sizing: border-box;
   background-color: $color-white;
+
+  @include respond(tab-land) {
+    // width < 1200px
+    font-size: 56.25%; // 1rem = 9px; 9px/16px = 56.25%;
+  }
+
+  @include respond(tab-port) {
+    // width < 900px
+    font-size: 50%; // 1rem = 8px; 8px/16px = 50%;
+  }
+
+  @include respond(phone) {
+    // width < 600px
+    font-size: 40%;
+  }
+
+  @include respond(big-desktop) {
+    // width > 1200px
+    font-size: 75%; // 1rem = 12px; 12/16 = 75%
+  }
 }
 
 body {

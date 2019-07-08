@@ -4,12 +4,22 @@
 
 .overview-section {
   display: flex;
+  flex-direction: row;
   margin: $padding-medium 0;
   justify-content: space-evenly;
   align-items: flex-start;
 
+  @include respond(phone) {
+    flex-direction: column;
+    margin: 5rem;
+  }
+
   .make-appointment {
     flex: 0 0 40%;
+
+    @include respond(phone) {
+      margin-bottom: 5rem;
+    }
   }
 
   .doctors {
@@ -36,4 +46,8 @@
     rgba($color-primary-light, 1)
   );
   padding: $padding-medium;
+
+  @include respond(phone) {
+    padding: 5rem;
+  }
 }

@@ -5,3 +5,44 @@
     display: table;
   }
 }
+
+// MEDIA QUERY MANAGER
+/*
+0 - 425px:        Phone
+425px - 768px:    Tablet (portrait)
+768px - 1024px:   Tablet (landscape)
+[1024px - 1800px] is where our normal styles apply
+1800px+ :         Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 27em) {
+      // 425px / 16
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 48em) {
+      // 768px / 16
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 64em) {
+      // 1024px / 16
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      // 1800px / 16
+      @content;
+    }
+  }
+}
