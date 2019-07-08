@@ -380,9 +380,8 @@ body {
     flex: 0 0 40%; }
     @media only screen and (max-width: 27em) {
       .price__image {
-        height: 500px;
-        width: 100%;
-        background-size: contain; } }
+        height: 200px;
+        width: 100%; } }
 
 .icon-item {
   display: flex;
@@ -586,21 +585,17 @@ body {
   top: 0;
   z-index: 900;
   opacity: 0.95;
+  display: flex;
+  align-items: center;
+  text-align: center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); }
   .navbar__logo {
     height: 80%;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%); }
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%); }
   .navbar__pageTitle {
     color: #ffffff;
     font-weight: 400;
-    font-size: 2.5rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    font-size: 2.5rem; }
 
 .footer {
   background-color: #707070;
