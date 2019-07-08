@@ -24,7 +24,12 @@
       url(../img/stethoscope.jpg);
     background-size: cover;
     width: 100%;
-    height: 45rem;
+    height: 40rem;
+
+    @include respond(phone) {
+      background-image: linear-gradient(to bottom, transparent 50%, $color-grey-light 100%),
+      url(../img/stethoscope.jpg);
+    }
   }
 
   .right {
