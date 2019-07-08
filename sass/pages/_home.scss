@@ -11,7 +11,7 @@
 
   @include respond(phone) {
     flex-direction: column;
-    margin: 5rem;
+    margin: 10rem 5rem;
   }
 
   .make-appointment {
@@ -48,6 +48,6 @@
   padding: $padding-medium;
 
   @include respond(phone) {
-    padding: 5rem;
+    padding: 10rem 5rem;
   }
 }
