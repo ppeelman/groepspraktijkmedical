@@ -25,6 +25,11 @@
       background-size: cover;
       width: 100%;
       height: 45rem;
+
+      @include respond(phone) {
+        background-image: linear-gradient(to bottom, transparent 50%, $color-grey-light 100%),
+        url(../img/injury-teddy.jpg);
+      }
     }
   
     .right {
