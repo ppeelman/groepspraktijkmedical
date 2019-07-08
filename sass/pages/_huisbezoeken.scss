@@ -1,6 +1,11 @@
 .how-to-request-huisbezoeken-section {
     display: flex;
+    flex-direction: row;
     padding-bottom: $padding-medium;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
   
     .left {
       display: flex;

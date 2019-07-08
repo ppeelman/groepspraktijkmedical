@@ -333,20 +333,29 @@ body {
   background-color: rgba(255, 6, 6, 0.6);
   padding: 1rem 2rem;
   border-radius: 10px;
-  font-weight: 300; }
+  font-weight: 300;
+  margin: 2rem;
+  text-align: center; }
 
 .price {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   background-color: rgba(61, 79, 184, 0.7);
   color: #f5f5f5;
-  padding: 8rem 0; }
+  padding: 8rem 4rem; }
+  @media only screen and (max-width: 27em) {
+    .price {
+      flex-direction: column; } }
   .price__amount {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex: 0 0 20%; }
+    @media only screen and (max-width: 27em) {
+      .price__amount {
+        margin-bottom: 8rem; } }
   .price__amount-total {
     border-radius: 50%;
     width: 12rem;
@@ -357,8 +366,11 @@ body {
     justify-content: center;
     color: rgba(61, 79, 184, 0.7);
     font-weight: 700;
-    font-size: 1.8rem;
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 27em) {
+      .price__amount-total {
+        width: 20rem;
+        height: 20rem; } }
   .price__explanation {
     flex: 0 0 40%; }
   .price__image {
@@ -366,13 +378,22 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     flex: 0 0 40%; }
+    @media only screen and (max-width: 27em) {
+      .price__image {
+        height: 500px;
+        width: 100%; } }
 
 .icon-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #707070;
-  max-width: 25rem; }
+  color: #707070; }
+  @media only screen and (max-width: 27em) {
+    .icon-item {
+      max-width: 80%; } }
+  @media only screen and (max-width: 27em) {
+    .icon-item:not(:last-child) {
+      margin-bottom: 6rem; } }
   .icon-item--light {
     color: #f5f5f5; }
   .icon-item__icon {
@@ -381,10 +402,8 @@ body {
     height: 10rem;
     margin-bottom: 2rem; }
   .icon-item__title {
-    font-size: 1.8rem;
     text-align: center; }
   .icon-item__body {
-    font-size: 1.2rem;
     text-align: center;
     font-weight: 300; }
 
@@ -411,8 +430,8 @@ body {
     left: 1rem; }
     @media only screen and (max-width: 27em) {
       .header__logo-box {
-        top: 1.5rem;
-        left: 0.5rem; } }
+        top: 1.2rem;
+        left: 0rem; } }
   .header__logo {
     height: 10rem;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%); }
@@ -570,12 +589,16 @@ body {
   text-align: center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); }
   .navbar__logo {
-    margin-right: 38%;
     height: 80%;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%); }
   .navbar__pageTitle {
     color: #ffffff;
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .footer {
   background-color: #707070;
@@ -624,7 +647,7 @@ body {
   @media only screen and (max-width: 27em) {
     .overview-section {
       flex-direction: column;
-      margin: 10rem 3rem; } }
+      margin: 10rem 4rem; } }
   .overview-section .make-appointment {
     flex: 0 0 40%; }
     @media only screen and (max-width: 27em) {
@@ -651,11 +674,15 @@ body {
   padding: 8rem; }
   @media only screen and (max-width: 27em) {
     .location-section {
-      padding: 10rem 3rem; } }
+      padding: 10rem 4rem; } }
 
 .how-to-request-raadplegingen-section {
   display: flex;
+  flex-direction: row;
   padding-bottom: 8rem; }
+  @media only screen and (max-width: 27em) {
+    .how-to-request-raadplegingen-section {
+      flex-direction: column; } }
   .how-to-request-raadplegingen-section .left {
     display: flex;
     flex-direction: column;
@@ -674,9 +701,13 @@ body {
 
 .take-along-section {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   padding: 8rem 0; }
+  @media only screen and (max-width: 27em) {
+    .take-along-section {
+      flex-direction: column; } }
 
 .be-aware-section {
   background-color: rgba(61, 79, 184, 0.7);
@@ -689,11 +720,21 @@ body {
     margin-top: 3rem;
     width: 100%;
     display: flex;
-    justify-content: space-evenly; }
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+    @media only screen and (max-width: 27em) {
+      .be-aware-section .icon-items-container {
+        flex-direction: column;
+        width: auto; } }
 
 .how-to-request-huisbezoeken-section {
   display: flex;
+  flex-direction: row;
   padding-bottom: 8rem; }
+  @media only screen and (max-width: 27em) {
+    .how-to-request-huisbezoeken-section {
+      flex-direction: column; } }
   .how-to-request-huisbezoeken-section .left {
     display: flex;
     flex-direction: column;

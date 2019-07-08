@@ -1,9 +1,14 @@
 .price {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     background-color: rgba($color-primary-dark, 0.7);
     color: $color-grey-light;
-    padding: $padding-medium 0;
+    padding: $padding-medium 4rem;
+
+    @include respond(phone) {
+        flex-direction: column;
+    }
 
     &__amount {
         display: flex;
@@ -11,6 +16,10 @@
         align-items: center;
         justify-content: center;
         flex: 0 0 20%;
+
+        @include respond(phone) {
+            margin-bottom: 8rem;
+        }
     }
 
     &__amount-total {
@@ -23,8 +32,12 @@
         justify-content: center;
         color: rgba($color-primary-dark, 0.7);
         font-weight: 700;
-        font-size: 1.8rem;
         margin-bottom: 2rem;
+
+        @include respond(phone) {
+            width: 20rem;
+            height: 20rem;
+        }
     }
 
     &__explanation {
@@ -36,6 +49,11 @@
         background-size: cover;
         background-repeat: no-repeat;
         flex: 0 0 40%;
+
+        @include respond(phone) {
+            height: 500px;
+            width: 100%;
+        }
     }
 
 }
