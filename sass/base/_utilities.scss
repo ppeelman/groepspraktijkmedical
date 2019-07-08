@@ -1,5 +1,5 @@
 .u-margin-bottom-sm {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; 
 }
 
 .u-margin-bottom-md {
@@ -8,6 +8,10 @@
 
 .u-margin-bottom-lg {
   margin-bottom: 3rem;
+
+  @include respond(phone) {
+    margin-bottom: 6rem;
+  }
 }
 
 .u-bold {

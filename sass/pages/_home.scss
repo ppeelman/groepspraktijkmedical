@@ -34,7 +34,13 @@
 
     &__caption {
       display: flex;
+      flex-direction: row;
       justify-content: space-around;
+
+      @include respond(phone) {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
 }

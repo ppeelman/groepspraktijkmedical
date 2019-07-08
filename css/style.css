@@ -130,6 +130,9 @@ body {
 
 .u-margin-bottom-lg {
   margin-bottom: 3rem; }
+  @media only screen and (max-width: 27em) {
+    .u-margin-bottom-lg {
+      margin-bottom: 6rem; } }
 
 .u-bold {
   font-weight: 900; }
@@ -192,7 +195,7 @@ body {
   text-transform: uppercase; }
 
 .btn--small {
-  padding: 1rem 3rem; }
+  padding: 10px 30px; }
 
 .btn__image-container {
   width: 10rem; }
@@ -398,9 +401,16 @@ body {
     position: absolute;
     top: 3rem;
     left: 1rem; }
+    @media only screen and (max-width: 27em) {
+      .header__logo-box {
+        top: 1.5rem;
+        left: 0.5rem; } }
   .header__logo {
     height: 10rem;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%); }
+    @media only screen and (max-width: 27em) {
+      .header__logo {
+        height: 8rem; } }
   .header__text-box {
     position: absolute;
     top: 45%;
@@ -425,6 +435,12 @@ body {
   background-color: #ffffff;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
   cursor: pointer; }
+  @media only screen and (max-width: 27em) {
+    .sidenav__button {
+      width: 5rem;
+      height: 5rem;
+      top: 2.5rem;
+      right: 2.5rem; } }
   .sidenav__button--navbar {
     top: 30px;
     right: 30px; }
@@ -441,6 +457,12 @@ body {
   background: linear-gradient(to right, rgba(61, 79, 184, 0.9), rgba(61, 79, 184, 0.9));
   transform: scale(1);
   transition: all 0.3s; }
+  @media only screen and (max-width: 27em) {
+    .sidenav__background {
+      width: 4rem;
+      height: 4rem;
+      top: 2.7rem;
+      right: 2.7rem; } }
   .sidenav__background--navbar {
     top: 35px;
     right: 35px; }
@@ -601,7 +623,12 @@ body {
       width: 100%; }
     .overview-section .doctors__caption {
       display: flex;
+      flex-direction: row;
       justify-content: space-around; }
+      @media only screen and (max-width: 27em) {
+        .overview-section .doctors__caption {
+          flex-direction: column;
+          align-items: center; } }
 
 .location-section {
   background-image: linear-gradient(to right bottom, rgba(141, 143, 219, 0.7), #8d8fdb);
