@@ -95,7 +95,8 @@ body {
   margin-bottom: 4rem; }
   @media only screen and (max-width: 27em) {
     .heading-secondary {
-      font-size: 3.5rem; } }
+      font-size: 3.5rem;
+      margin-bottom: 6rem; } }
   .heading-secondary::after {
     position: absolute;
     content: "";
@@ -132,7 +133,7 @@ body {
   margin-bottom: 3rem; }
   @media only screen and (max-width: 27em) {
     .u-margin-bottom-lg {
-      margin-bottom: 6rem; } }
+      margin-bottom: 5rem; } }
 
 .u-bold {
   font-weight: 900; }
@@ -294,7 +295,8 @@ body {
       min-width: auto;
       width: 100%; } }
   .panel__sub-panel {
-    flex: 0 0 50%; }
+    flex: 0 0 50%;
+    overflow: hidden; }
     .panel__sub-panel--left {
       height: 400px; }
       @media only screen and (max-width: 27em) {
@@ -318,6 +320,7 @@ body {
   .address__body {
     text-decoration: none;
     color: inherit;
+    font-size: 1.3em;
     font-weight: 300; }
     .address__body:hover {
       font-weight: 400; }
@@ -384,6 +387,11 @@ body {
     font-size: 1.2rem;
     text-align: center;
     font-weight: 300; }
+
+.telephone {
+  font-weight: 700;
+  text-decoration: none;
+  color: #3d4fb8; }
 
 .header {
   height: 95vh;
@@ -510,6 +518,10 @@ body {
 .sidenav__icon {
   top: 3.5rem;
   left: 2rem; }
+  @media only screen and (max-width: 27em) {
+    .sidenav__icon {
+      top: 2.5rem;
+      left: 1.2rem; } }
   .sidenav__icon, .sidenav__icon::before, .sidenav__icon::after {
     position: absolute;
     background-color: #000000;
@@ -517,6 +529,10 @@ body {
     height: 2px;
     display: inline-block;
     transition: all 0.2s; }
+    @media only screen and (max-width: 27em) {
+      .sidenav__icon, .sidenav__icon::before, .sidenav__icon::after {
+        height: 1px;
+        width: 2.6rem; } }
   .sidenav__icon::before, .sidenav__icon::after {
     content: ""; }
   .sidenav__icon::before {
@@ -608,7 +624,7 @@ body {
   @media only screen and (max-width: 27em) {
     .overview-section {
       flex-direction: column;
-      margin: 10rem 5rem; } }
+      margin: 10rem 3rem; } }
   .overview-section .make-appointment {
     flex: 0 0 40%; }
     @media only screen and (max-width: 27em) {
@@ -635,7 +651,7 @@ body {
   padding: 8rem; }
   @media only screen and (max-width: 27em) {
     .location-section {
-      padding: 10rem 5rem; } }
+      padding: 10rem 3rem; } }
 
 .how-to-request-raadplegingen-section {
   display: flex;

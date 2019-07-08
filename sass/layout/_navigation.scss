@@ -152,6 +152,11 @@
     top: 3.5rem;
     left: 2rem;
 
+    @include respond(phone) {
+      top: 2.5rem;
+      left: 1.2rem;
+    }
+
     &,
     &::before,
     &::after {
@@ -161,6 +166,11 @@
       height: 2px;
       display: inline-block;
       transition: all 0.2s;
+
+      @include respond(phone) {
+        height: 1px;
+        width: 2.6rem;
+      }
     }
 
     &::before,
