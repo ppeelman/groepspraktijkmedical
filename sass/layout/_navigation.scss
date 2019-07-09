@@ -32,8 +32,15 @@
     @include respond(phone) {
       width: $hamburger-button-diameter-small;
       height: $hamburger-button-diameter-small;
-      top: 5rem;
-      right: 5rem;
+      top: 3rem;
+      right: 3rem;
+
+      &--navbar {
+        width: $hamburger-button-diameter-small;
+        height: $hamburger-button-diameter-small;
+        top: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-small} / 2);
+        right: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-small} / 2);
+      }
     }
   }
 
@@ -76,8 +83,15 @@
     @include respond(phone) {
       width: calc(#{$hamburger-button-diameter-small} - 1rem);
       height: calc(#{$hamburger-button-diameter-small} - 1rem);
-      top: calc(5rem + 0.5rem);
-      right: calc(5rem + 0.5rem);
+      top: calc(3rem + 0.5rem);
+      right: calc(3rem + 0.5rem);
+
+      &--navbar {
+        width: calc(#{$hamburger-button-diameter-small} - 1rem); // #1
+        height: calc(#{$hamburger-button-diameter-small} - 1rem); // #1
+        top: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-small} / 2 + 0.5rem); // #2
+        right: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-small} / 2 + 0.5rem); //#2
+      }
     }
   }
 

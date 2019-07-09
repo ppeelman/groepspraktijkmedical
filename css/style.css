@@ -133,13 +133,13 @@ body {
   margin-bottom: 2rem; }
   @media only screen and (max-width: 27em) {
     .u-margin-bottom-md {
-      margin-bottom: 4rem; } }
+      margin-bottom: 3rem; } }
 
 .u-margin-bottom-lg {
   margin-bottom: 3rem; }
   @media only screen and (max-width: 27em) {
     .u-margin-bottom-lg {
-      margin-bottom: 5rem; } }
+      margin-bottom: 4rem; } }
 
 .u-bold {
   font-weight: 900; }
@@ -514,8 +514,13 @@ body {
     .sidenav__button {
       width: 5rem;
       height: 5rem;
-      top: 5rem;
-      right: 5rem; } }
+      top: 3rem;
+      right: 3rem; }
+      .sidenav__button--navbar {
+        width: 5rem;
+        height: 5rem;
+        top: calc(64px / 2 - 5rem / 2);
+        right: calc(64px / 2 - 5rem / 2); } }
 
 .sidenav__background {
   width: calc(7rem - 1rem);
@@ -538,8 +543,13 @@ body {
     .sidenav__background {
       width: calc(5rem - 1rem);
       height: calc(5rem - 1rem);
-      top: calc(5rem + 0.5rem);
-      right: calc(5rem + 0.5rem); } }
+      top: calc(3rem + 0.5rem);
+      right: calc(3rem + 0.5rem); }
+      .sidenav__background--navbar {
+        width: calc(5rem - 1rem);
+        height: calc(5rem - 1rem);
+        top: calc(64px / 2 - 5rem / 2 + 0.5rem);
+        right: calc(64px / 2 - 5rem / 2 + 0.5rem); } }
 
 .sidenav__checkbox:checked ~ .sidenav__background {
   transform: scale(100); }
