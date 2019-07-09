@@ -14,8 +14,8 @@
     height: $hamburger-button-diameter-large;
     display: inline-block;
     position: fixed;
-    top: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-large} / 2);
-    right: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-large} / 2);
+    top: 5rem;
+    right: 5rem;
     z-index: 2000;
     border-radius: 50%;
     background-color: $color-white;
@@ -32,8 +32,8 @@
     @include respond(phone) {
       width: $hamburger-button-diameter-small;
       height: $hamburger-button-diameter-small;
-      top: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-small} / 2);
-      right: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-small} / 2);
+      top: 5rem;
+      right: 5rem;
     }
   }
 
@@ -54,8 +54,8 @@
     height: calc(#{$hamburger-button-diameter-large} - 1rem); // #1
     display: inline-block;
     position: fixed; // #2
-    top: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-large} / 2 + 0.5rem); // #2
-    right: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-large} / 2 + 0.5rem); //#2
+    top: 5.5rem; // #2
+    right: 5.5rem; //#2
     z-index: 1000;
     border-radius: 50%;
     background: linear-gradient(
@@ -76,8 +76,8 @@
     @include respond(phone) {
       width: calc(#{$hamburger-button-diameter-small} - 1rem);
       height: calc(#{$hamburger-button-diameter-small} - 1rem);
-      top: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-small} / 2 + 0.5rem);
-      right: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-small} / 2 + 0.5rem);
+      top: calc(5rem + 0.5rem);
+      right: calc(5rem + 0.5rem);
     }
   }
 
@@ -176,15 +176,17 @@
       display: inline-block;
       transition: all 0.2s;
 
-      &--navbar {
-        height: 1px;
-        width: calc(#{$hamburger-button-diameter-small} - 2rem);
-      }
-
       @include respond(phone) {
         height: 1px;
         width: calc(#{$hamburger-button-diameter-small} - 2rem);
       }
+    }
+
+    &--navbar,
+    &--navbar::before,
+    &--navbar::after {
+      height: 1px;
+      width: calc(#{$hamburger-button-diameter-small} - 2rem);
     }
 
     &::before,
@@ -232,7 +234,7 @@
     $color-primary-light,
     $color-primary-dark
   );
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 900;
   opacity: 0.95;
@@ -252,5 +254,8 @@
     color: $color-white;
     font-weight: 400;
     font-size: 2.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
