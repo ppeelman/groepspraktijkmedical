@@ -10,23 +10,30 @@
   // 3. Background -- 1000
 
   &__button {
-    width: 7rem;
-    height: 7rem;
+    width: $hamburger-button-diameter-large;
+    height: $hamburger-button-diameter-large;
     display: inline-block;
     position: fixed;
-    top: 5rem;
-    right: 5rem;
+    top: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-large} / 2);
+    right: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-large} / 2);
     z-index: 2000;
     border-radius: 50%;
     background-color: $color-white;
     box-shadow: 0 3px 5px rgba($color-black, 0.4);
     cursor: pointer;
 
+    &--navbar {
+      width: $hamburger-button-diameter-small;
+      height: $hamburger-button-diameter-small;
+      top: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-small} / 2);
+      right: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-small} / 2);
+    }
+
     @include respond(phone) {
-      width: 5rem;
-      height: 5rem;
-      top: 2.5rem;
-      right: 2.5rem;
+      width: $hamburger-button-diameter-small;
+      height: $hamburger-button-diameter-small;
+      top: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-small} / 2);
+      right: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-small} / 2);
     }
   }
 
@@ -43,12 +50,12 @@
   // ===========================================================================
 
   &__background {
-    width: 6rem; // #1
-    height: 6rem; // #1
+    width: calc(#{$hamburger-button-diameter-large} - 1rem); // #1
+    height: calc(#{$hamburger-button-diameter-large} - 1rem); // #1
     display: inline-block;
     position: fixed; // #2
-    top: 5.5rem; // #2
-    right: 5.5rem; //#2
+    top: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-large} / 2 + 0.5rem); // #2
+    right: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-large} / 2 + 0.5rem); //#2
     z-index: 1000;
     border-radius: 50%;
     background: linear-gradient(
@@ -59,11 +66,18 @@
     transform: scale(1);
     transition: all 0.3s;
 
+    &--navbar {
+      width: calc(#{$hamburger-button-diameter-small} - 1rem); // #1
+      height: calc(#{$hamburger-button-diameter-small} - 1rem); // #1
+      top: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-small} / 2 + 0.5rem); // #2
+      right: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-small} / 2 + 0.5rem); //#2
+    }
+
     @include respond(phone) {
-      width: 4rem;
-      height: 4rem;
-      top: 2.7rem;
-      right: 2.7rem;
+      width: calc(#{$hamburger-button-diameter-small} - 1rem);
+      height: calc(#{$hamburger-button-diameter-small} - 1rem);
+      top: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-small} / 2 + 0.5rem);
+      right: calc(#{$navbar-height} / 2 - #{$hamburger-button-diameter-small} / 2 + 0.5rem);
     }
   }
 
@@ -139,12 +153,17 @@
   // ==========================================================================
 
   &__icon {
-    top: 3.5rem;
-    left: 2rem;
+    top: calc(#{$hamburger-button-diameter-large} / 2);
+    left: 1.5rem;
+
+    &--navbar {
+      top: calc(#{$hamburger-button-diameter-small} / 2);
+      left: 1rem;
+    }
 
     @include respond(phone) {
-      top: 2.5rem;
-      left: 1.2rem;
+      top: calc(#{$hamburger-button-diameter-small} / 2);
+      left: 1rem;
     }
 
     &,
@@ -152,14 +171,19 @@
     &::after {
       position: absolute;
       background-color: $color-black;
-      width: 3rem;
+      width: calc(#{$hamburger-button-diameter-large} - 3rem);
       height: 2px;
       display: inline-block;
       transition: all 0.2s;
 
+      &--navbar {
+        height: 1px;
+        width: calc(#{$hamburger-button-diameter-small} - 2rem);
+      }
+
       @include respond(phone) {
         height: 1px;
-        width: 2.6rem;
+        width: calc(#{$hamburger-button-diameter-small} - 2rem);
       }
     }
 
@@ -201,7 +225,7 @@
 }
 
 .navbar {
-  height: 64px;
+  height: $navbar-height;
   width: 100%;
   background-image: linear-gradient(
     to bottom,
@@ -216,6 +240,7 @@
   align-items: center;
   text-align: center;
   box-shadow: $shadow-medium;
+  
 
   &__logo {
     height: 80%;

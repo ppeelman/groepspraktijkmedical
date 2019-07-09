@@ -23,6 +23,10 @@
     &--left {
       height: 400px;
 
+      & > * {
+        overflow: hidden;
+      }
+
       @include respond(phone) {
         order: 2;
         height: 300px;

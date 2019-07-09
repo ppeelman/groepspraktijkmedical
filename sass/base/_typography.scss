@@ -59,6 +59,10 @@ body {
   align-items: center;
   margin-bottom: 4rem;
 
+  @include respond(phone) {
+    margin-bottom: 6rem;
+  }
+
   &__icon {
     fill: $color-primary-dark;
     height: 5rem;

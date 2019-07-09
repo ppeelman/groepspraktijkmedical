@@ -4,6 +4,10 @@
 
 .u-margin-bottom-md {
   margin-bottom: 2rem;
+
+  @include respond(phone) {
+    margin-bottom: 4rem;
+  }
 }
 
 .u-margin-bottom-lg {

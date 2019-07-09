@@ -115,6 +115,9 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 4rem; }
+  @media only screen and (max-width: 27em) {
+    .icon-heading {
+      margin-bottom: 6rem; } }
   .icon-heading__icon {
     fill: #3d4fb8;
     height: 5rem;
@@ -128,6 +131,9 @@ body {
 
 .u-margin-bottom-md {
   margin-bottom: 2rem; }
+  @media only screen and (max-width: 27em) {
+    .u-margin-bottom-md {
+      margin-bottom: 4rem; } }
 
 .u-margin-bottom-lg {
   margin-bottom: 3rem; }
@@ -299,6 +305,8 @@ body {
     overflow: hidden; }
     .panel__sub-panel--left {
       height: 400px; }
+      .panel__sub-panel--left > * {
+        overflow: hidden; }
       @media only screen and (max-width: 27em) {
         .panel__sub-panel--left {
           order: 2;
@@ -331,7 +339,7 @@ body {
   display: inline-block;
   color: #ffffff;
   background-color: rgba(255, 6, 6, 0.6);
-  padding: 1rem 2rem;
+  padding: 1.5rem 3rem;
   border-radius: 10px;
   font-weight: 300;
   margin: 2rem;
@@ -343,10 +351,11 @@ body {
   justify-content: space-around;
   background-color: rgba(61, 79, 184, 0.7);
   color: #f5f5f5;
-  padding: 8rem 4rem; }
+  padding: 8rem 0rem; }
   @media only screen and (max-width: 27em) {
     .price {
-      flex-direction: column; } }
+      flex-direction: column;
+      padding: 8rem 4rem; } }
   .price__amount {
     display: flex;
     flex-direction: column;
@@ -417,6 +426,32 @@ body {
   text-decoration: none;
   color: #3d4fb8; }
 
+.hero-with-content {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8rem; }
+  @media only screen and (max-width: 27em) {
+    .hero-with-content {
+      flex-direction: column; } }
+  .hero-with-content__left {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 40%;
+    align-items: center; }
+  .hero-with-content__hero {
+    background-size: cover;
+    width: 100%;
+    height: 80vh; }
+    @media only screen and (max-width: 27em) {
+      .hero-with-content__hero {
+        height: 50vh; } }
+  .hero-with-content__right {
+    flex: 0 0 60%;
+    padding: 4rem;
+    padding-bottom: 0; }
+    .hero-with-content__right > *:not(:last-child) {
+      margin-bottom: 10rem; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(141, 143, 219, 0.8), rgba(61, 79, 184, 0.8)), url(../img/hero.jpg);
@@ -461,38 +496,48 @@ body {
   height: 7rem;
   display: inline-block;
   position: fixed;
-  top: 5rem;
-  right: 5rem;
+  top: calc(64px / 2 - 7rem / 2);
+  right: calc(64px / 2 - 7rem / 2);
   z-index: 2000;
   border-radius: 50%;
   background-color: #ffffff;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
   cursor: pointer; }
+  .sidenav__button--navbar {
+    width: 5rem;
+    height: 5rem;
+    top: calc(64px / 2 - 5rem / 2);
+    right: calc(64px / 2 - 5rem / 2); }
   @media only screen and (max-width: 27em) {
     .sidenav__button {
       width: 5rem;
       height: 5rem;
-      top: 2.5rem;
-      right: 2.5rem; } }
+      top: calc(64px / 2 - 5rem / 2);
+      right: calc(64px / 2 - 5rem / 2); } }
 
 .sidenav__background {
-  width: 6rem;
-  height: 6rem;
+  width: calc(7rem - 1rem);
+  height: calc(7rem - 1rem);
   display: inline-block;
   position: fixed;
-  top: 5.5rem;
-  right: 5.5rem;
+  top: calc(64px / 2 - 7rem / 2 + 0.5rem);
+  right: calc(64px / 2 - 7rem / 2 + 0.5rem);
   z-index: 1000;
   border-radius: 50%;
   background: linear-gradient(to right, rgba(61, 79, 184, 0.9), rgba(61, 79, 184, 0.9));
   transform: scale(1);
   transition: all 0.3s; }
+  .sidenav__background--navbar {
+    width: calc(5rem - 1rem);
+    height: calc(5rem - 1rem);
+    top: calc(64px / 2 - 5rem / 2 + 0.5rem);
+    right: calc(64px / 2 - 5rem / 2 + 0.5rem); }
   @media only screen and (max-width: 27em) {
     .sidenav__background {
-      width: 4rem;
-      height: 4rem;
-      top: 2.7rem;
-      right: 2.7rem; } }
+      width: calc(5rem - 1rem);
+      height: calc(5rem - 1rem);
+      top: calc(64px / 2 - 5rem / 2 + 0.5rem);
+      right: calc(64px / 2 - 5rem / 2 + 0.5rem); } }
 
 .sidenav__checkbox:checked ~ .sidenav__background {
   transform: scale(100); }
@@ -535,23 +580,29 @@ body {
   border: 2px solid #ffffff; }
 
 .sidenav__icon {
-  top: 3.5rem;
-  left: 2rem; }
+  top: calc(7rem / 2);
+  left: 1.5rem; }
+  .sidenav__icon--navbar {
+    top: calc(5rem / 2);
+    left: 1rem; }
   @media only screen and (max-width: 27em) {
     .sidenav__icon {
-      top: 2.5rem;
-      left: 1.2rem; } }
+      top: calc(5rem / 2);
+      left: 1rem; } }
   .sidenav__icon, .sidenav__icon::before, .sidenav__icon::after {
     position: absolute;
     background-color: #000000;
-    width: 3rem;
+    width: calc(7rem - 3rem);
     height: 2px;
     display: inline-block;
     transition: all 0.2s; }
+    .sidenav__icon--navbar, .sidenav__icon::before--navbar, .sidenav__icon::after--navbar {
+      height: 1px;
+      width: calc(5rem - 2rem); }
     @media only screen and (max-width: 27em) {
       .sidenav__icon, .sidenav__icon::before, .sidenav__icon::after {
         height: 1px;
-        width: 2.6rem; } }
+        width: calc(5rem - 2rem); } }
   .sidenav__icon::before, .sidenav__icon::after {
     content: ""; }
   .sidenav__icon::before {
@@ -672,31 +723,11 @@ body {
     .location-section {
       padding: 10rem 4rem; } }
 
-.how-to-request-raadplegingen-section {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 8rem; }
+.how-to-request-section__hero {
+  background-image: linear-gradient(to right, transparent 50%, #f5f5f5 100%), linear-gradient(to bottom, transparent 50%, #f5f5f5 100%), url(../img/stethoscope.jpg); }
   @media only screen and (max-width: 27em) {
-    .how-to-request-raadplegingen-section {
-      flex-direction: column; } }
-  .how-to-request-raadplegingen-section .left {
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 40%;
-    align-items: center; }
-  .how-to-request-raadplegingen-section .hero {
-    background-image: linear-gradient(to right, transparent 50%, #f5f5f5 100%), linear-gradient(to bottom, transparent 50%, #f5f5f5 100%), url(../img/stethoscope.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 40rem; }
-    @media only screen and (max-width: 27em) {
-      .how-to-request-raadplegingen-section .hero {
-        background-image: linear-gradient(to bottom, transparent 50%, #f5f5f5 100%), url(../img/stethoscope.jpg); } }
-  .how-to-request-raadplegingen-section .right {
-    flex: 0 0 60%;
-    padding: 4rem 4rem 0rem 4rem; }
-    .how-to-request-raadplegingen-section .right > :not(:last-child) {
-      margin-bottom: 8rem; }
+    .how-to-request-section__hero {
+      background-image: url(../img/stethoscope.jpg); } }
 
 .take-along-section {
   display: flex;
@@ -727,28 +758,8 @@ body {
         flex-direction: column;
         width: auto; } }
 
-.how-to-request-huisbezoeken-section {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 8rem; }
+.how-to-request-huisbezoeken-section__hero {
+  background-image: linear-gradient(to right, transparent 50%, #f5f5f5 100%), linear-gradient(to bottom, transparent 50%, #f5f5f5 100%), url(../img/injury-teddy.jpg); }
   @media only screen and (max-width: 27em) {
-    .how-to-request-huisbezoeken-section {
-      flex-direction: column; } }
-  .how-to-request-huisbezoeken-section .left {
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 40%;
-    align-items: center; }
-  .how-to-request-huisbezoeken-section .hero {
-    background-image: linear-gradient(to right, transparent 50%, #f5f5f5 100%), linear-gradient(to bottom, transparent 50%, #f5f5f5 100%), url(../img/injury-teddy.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 45rem; }
-    @media only screen and (max-width: 27em) {
-      .how-to-request-huisbezoeken-section .hero {
-        background-image: linear-gradient(to bottom, transparent 50%, #f5f5f5 100%), url(../img/injury-teddy.jpg); } }
-  .how-to-request-huisbezoeken-section .right {
-    flex: 0 0 60%;
-    padding: 4rem 4rem 0rem 4rem; }
-    .how-to-request-huisbezoeken-section .right > :not(:last-child) {
-      margin-bottom: 8rem; }
+    .how-to-request-huisbezoeken-section__hero {
+      background-image: url(../img/injury-teddy.jpg); } }
