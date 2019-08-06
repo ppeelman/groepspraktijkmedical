@@ -1,0 +1,15 @@
+.wachtdienst-section {
+  &__hero {
+    background-image: linear-gradient(
+        to right,
+        transparent 75%,
+        $color-grey-light 100%
+      ),
+      linear-gradient(to bottom, transparent 75%, $color-grey-light 100%),
+      url(../img/beach.jpg);
+
+    @include respond(phone) {
+      background-image: url(../img/beach.jpg);
+    }
+  }
+}
