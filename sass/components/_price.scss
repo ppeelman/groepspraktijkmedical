@@ -1,66 +1,66 @@
 .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba($color-primary-dark, 0.7);
+  color: $color-grey-light;
+  padding: $padding-medium 0rem;
+
+  @include respond(phone) {
+    flex-direction: column;
+    padding: $padding-medium 4rem;
+  }
+
+  &__amount {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: rgba($color-primary-dark, 0.7);
-    color: $color-grey-light;
-    padding: $padding-medium 0rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 20%;
 
     @include respond(phone) {
-        flex-direction: column;
-        padding: $padding-medium 4rem;
+      margin-bottom: 8rem;
     }
+  }
 
-    &__amount {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex: 0 0 20%;
+  &__amount-total {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    background-color: $color-grey-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba($color-primary-dark, 0.7);
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
 
-        @include respond(phone) {
-            margin-bottom: 8rem;
-        }
+    @include respond(phone) {
+      width: 20rem;
+      height: 20rem;
+      font-size: 4rem;
     }
+  }
 
-    &__amount-total {
-        border-radius: 50%;
-        width: 15rem;
-        height: 15rem;
-        background-color: $color-grey-light;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: rgba($color-primary-dark, 0.7);
-        font-weight: 700;
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
+  &__explanation {
+    flex: 0 0 40%;
+  }
 
-        @include respond(phone) {
-            width: 20rem;
-            height: 20rem;
-            font-size: 4rem;
-        }
+  &__image {
+    background-image: linear-gradient(
+        to right,
+        rgba($color-primary-dark, 0.7),
+        rgba($color-primary-dark, 0.7)
+      ),
+      url(../img/coins.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 0 0 40%;
+
+    @include respond(phone) {
+      height: 200px;
+      width: 100%;
     }
-
-    &__explanation {
-        flex: 0 0 40%;
-
-        @include respond(phone) {
-            margin-bottom: 8rem;
-        }
-    }
-
-    &__image {
-        background-image: linear-gradient(to right, rgba($color-primary-dark, 0.7), rgba($color-primary-dark, 0.7)), url(../img/coins.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        flex: 0 0 40%;
-
-        @include respond(phone) {
-            height: 200px;
-            width: 100%;
-        }
-    }
-
+  }
 }

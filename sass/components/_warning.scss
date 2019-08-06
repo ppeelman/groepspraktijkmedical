@@ -1,10 +1,27 @@
 .warning {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   color: $color-white;
   background-color: $color-warning;
-  padding: 1.5rem 3rem;
+  padding: 2rem 2rem;
   border-radius: $border-radius-large;
   font-weight: 300;
-  margin: 2rem;
-  text-align: center;
+
+  &__icon {
+    flex: 0 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-white;
+    color: $color-warning;
+    border-radius: 50%;
+    text-align: center;
+    height: 60px;
+    font-size: 3rem;
+    font-weight: 900;
+  }
+
+  &__text {
+    margin-left: 2rem;
+  }
 }

@@ -7,6 +7,7 @@ body {
 
   @include respond(phone) {
     font-size: 2.5rem;
+    line-height: 1.6;
   }
 }
 
@@ -31,7 +32,7 @@ body {
 
   @include respond(phone) {
     font-size: 3.5rem;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
   }
 
   &::after {
@@ -57,10 +58,10 @@ body {
 .icon-heading {
   display: flex;
   align-items: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 
   @include respond(phone) {
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
   }
 
   &__icon {
@@ -70,7 +71,7 @@ body {
   }
 
   &__text {
-    margin-left: 4rem;
+    margin-left: 3rem;
     margin-bottom: 0;
   }
 }

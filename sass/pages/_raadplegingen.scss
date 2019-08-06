@@ -1,5 +1,4 @@
 .how-to-request-section {
-
   &__hero {
     background-image: linear-gradient(
         to right,
@@ -20,9 +19,9 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding: $padding-medium 0;
+  padding: $padding-medium 5rem;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     flex-direction: column;
   }
 }
@@ -35,7 +34,6 @@
   align-items: center;
   padding: $padding-medium 0;
 
-
   .icon-items-container {
     margin-top: 3rem;
     width: 100%;
@@ -43,11 +41,11 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 
     @include respond(phone) {
       flex-direction: column;
       width: auto;
     }
-    
   }
 }

@@ -1,37 +1,39 @@
 .icon-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: $color-grey-dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $color-grey-dark;
+  min-width: 25rem;
+  flex: 0 1 20%;
+  margin: 3rem;
 
+  @include respond(phone) {
+    max-width: 80%;
+  }
+
+  &:not(:last-child) {
     @include respond(phone) {
-        max-width: 80%;
+      margin-bottom: 6rem;
     }
+  }
 
-    &:not(:last-child) {
-        @include respond(phone) {
-            margin-bottom: 6rem;
-        }
-    }
+  &--light {
+    color: $color-grey-light;
+  }
 
-    &--light {
-        color: $color-grey-light;
-    }
+  &__icon {
+    color: inherit;
+    fill: currentColor;
+    height: 8rem;
+    margin-bottom: 1rem;
+  }
 
-    &__icon {
-        color: inherit;
-        fill: currentColor;
-        height: 8rem;
-        margin-bottom: 2rem;
-    }
+  &__title {
+    text-align: center;
+  }
 
-    &__title {
-
-        text-align: center;
-    }
-
-    &__body {
-        text-align: center;
-        font-weight: 300;
-    }
+  &__body {
+    text-align: center;
+    font-weight: 300;
+  }
 }
