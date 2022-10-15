@@ -287,6 +287,7 @@ body {
 
 .panel {
   min-width: 400px;
+  max-width: 1000px;
   width: 75%;
   margin: 0 auto;
   border-radius: 50px;
@@ -296,9 +297,6 @@ body {
   flex-direction: row;
   align-items: stretch;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); }
-  @media only screen and (min-width: 112.5em) {
-    .panel {
-      width: 1200px; } }
   @media only screen and (max-width: 27em) {
     .panel {
       flex-direction: column;
@@ -309,9 +307,6 @@ body {
     overflow: hidden; }
     .panel__sub-panel--left {
       height: 400px; }
-      @media only screen and (min-width: 112.5em) {
-        .panel__sub-panel--left {
-          height: 600px; } }
       .panel__sub-panel--left > * {
         overflow: hidden;
         z-index: 1; }
@@ -338,9 +333,6 @@ body {
     color: inherit;
     font-size: 1.3em;
     font-weight: 300; }
-    @media only screen and (min-width: 112.5em) {
-      .address__body {
-        font-size: 2em; } }
     .address__body:hover {
       font-weight: 400; }
     .address__body span {
@@ -353,7 +345,7 @@ body {
   background-color: rgba(255, 6, 6, 0.6);
   padding: 2rem 2rem;
   border-radius: 10px;
-  font-weight: 300; }
+  font-weight: 500; }
   .warning__icon {
     flex: 0 0 60px;
     display: flex;
@@ -412,6 +404,7 @@ body {
     background-image: linear-gradient(to right, rgba(61, 79, 184, 0.7), rgba(61, 79, 184, 0.7)), url(../img/coins.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     flex: 0 0 40%; }
     @media only screen and (max-width: 27em) {
       .price__image {
@@ -466,11 +459,10 @@ body {
   .hero-with-content__hero {
     background-size: cover;
     width: 100%;
-    height: 80vh;
-    max-height: 500px; }
+    height: 60vh; }
     @media only screen and (max-width: 27em) {
       .hero-with-content__hero {
-        height: 50vh; } }
+        height: 40vh; } }
   .hero-with-content__right {
     flex: 0 0 60%;
     padding: 4rem;
@@ -526,8 +518,6 @@ body {
   right: 5rem;
   z-index: 2000;
   border-radius: 50%;
-  background-color: #ffffff;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
   cursor: pointer; }
   .sidenav__button--navbar {
     width: 5rem;
@@ -555,7 +545,6 @@ body {
   right: 5.5rem;
   z-index: 1000;
   border-radius: 50%;
-  background: linear-gradient(to right, rgba(61, 79, 184, 0.9), rgba(61, 79, 184, 0.9));
   transform: scale(1);
   transition: all 0.3s; }
   .sidenav__background--navbar {
@@ -576,7 +565,8 @@ body {
         right: calc(64px / 2 - 5rem / 2 + 0.5rem); } }
 
 .sidenav__checkbox:checked ~ .sidenav__background {
-  transform: scale(100); }
+  transform: scale(100);
+  background: linear-gradient(to right, rgba(61, 79, 184, 0.9), rgba(61, 79, 184, 0.9)); }
 
 .sidenav__list-container {
   position: fixed;
@@ -627,17 +617,17 @@ body {
       left: 1rem; } }
   .sidenav__icon, .sidenav__icon::before, .sidenav__icon::after {
     position: absolute;
-    background-color: #000000;
+    background-color: #ffffff;
     width: calc(7rem - 3rem);
-    height: 2px;
+    height: 3px;
     display: inline-block;
     transition: all 0.2s; }
     @media only screen and (max-width: 27em) {
       .sidenav__icon, .sidenav__icon::before, .sidenav__icon::after {
-        height: 1px;
+        height: 3px;
         width: calc(5rem - 2rem); } }
   .sidenav__icon--navbar, .sidenav__icon--navbar::before, .sidenav__icon--navbar::after {
-    height: 1px;
+    height: 3px;
     width: calc(5rem - 2rem); }
   .sidenav__icon::before, .sidenav__icon::after {
     content: ""; }
@@ -666,7 +656,7 @@ body {
 .navbar {
   height: 64px;
   width: 100%;
-  background-image: linear-gradient(to bottom, #8d8fdb, #3d4fb8);
+  background-color: #3d4fb8;
   position: fixed;
   top: 0;
   z-index: 900;
@@ -765,8 +755,18 @@ body {
       .overview-section .doctors {
         flex: 0 0 30%; } }
     .overview-section .doctors__image {
-      width: 100%; }
+      width: 100%;
+      border-radius: 50px;
+      outline: 3px solid #8d8fdb;
+      border: 12px solid #f5f5f5;
+      background-color: #f5f5f5; }
+      @media only screen and (max-width: 27em) {
+        .overview-section .doctors__image {
+          outline: none;
+          border-radius: 10px;
+          border: none; } }
     .overview-section .doctors__caption {
+      margin-top: 1rem;
       display: flex;
       flex-direction: row;
       justify-content: space-around; }
@@ -774,8 +774,6 @@ body {
         .overview-section .doctors__caption {
           flex-direction: column;
           align-items: center; } }
-    .overview-section .doctors__name {
-      color: #3d4fb8; }
 
 .location-section {
   background-image: linear-gradient(to right bottom, rgba(141, 143, 219, 0.7), #8d8fdb);
@@ -825,3 +823,9 @@ body {
   @media only screen and (max-width: 27em) {
     .how-to-request-huisbezoeken-section__hero {
       background-image: url(../img/injury-teddy.jpg); } }
+
+.wachtdienst-section__hero {
+  background-image: linear-gradient(to right, transparent 75%, #f5f5f5 100%), linear-gradient(to bottom, transparent 75%, #f5f5f5 100%), url(../img/beach.jpg); }
+  @media only screen and (max-width: 27em) {
+    .wachtdienst-section__hero {
+      background-image: url(../img/beach.jpg); } }

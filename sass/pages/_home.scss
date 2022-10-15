@@ -34,9 +34,21 @@
 
     &__image {
       width: 100%;
+      border-radius: 50px;
+      outline: 3px solid $color-primary-light;
+      border: 12px solid #f5f5f5;
+      background-color: #f5f5f5;
+
+      @include respond(phone) {
+        outline: none;
+        border-radius: 10px;
+        border: none;
+      }
     }
 
+
     &__caption {
+      margin-top: 1rem;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -47,17 +59,14 @@
       }
     }
 
-    &__name {
-      color: #3d4fb8;
-    }
   }
 }
 
 .location-section {
   background-image: linear-gradient(
-    to right bottom,
-    rgba($color-primary-light, 0.7),
-    rgba($color-primary-light, 1)
+                  to right bottom,
+                  rgba($color-primary-light, 0.7),
+                  rgba($color-primary-light, 1)
   );
   padding: $padding-medium;
 
