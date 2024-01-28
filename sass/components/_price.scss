@@ -18,7 +18,7 @@
 
     @include respond(phone) {
       flex-direction: row;
-      margin-bottom: 8rem;
+      margin-bottom: 4rem;
       gap: 2rem;
     }
   }

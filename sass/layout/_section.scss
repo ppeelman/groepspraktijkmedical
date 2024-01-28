@@ -1,12 +1,12 @@
 .section {
-  padding: $padding-large calc(50vw - 60ch);
+  padding: $padding-small calc(50vw - 60ch);
 
   &--narrow {
-    padding: $padding-large calc(50vw - 40ch);
+    padding: $padding-small calc(50vw - 40ch);
   }
 
   &--wide {
-    padding: $padding-large calc(50vw - 80ch);
+    padding: $padding-small calc(50vw - 80ch);
   }
 
   &--dark {
@@ -16,6 +16,6 @@
 
   @include respond(phone) {
     flex-direction: column;
-    padding: $padding-small;
+    padding: $padding-medium $padding-small;
   }
 }

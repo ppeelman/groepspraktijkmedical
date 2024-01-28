@@ -244,25 +244,26 @@ a {
   background-size: cover;
   background-position: center;
   aspect-ratio: 3 / 4;
-  box-shadow: var(--shadow-elevation-high);
+  box-shadow: var(--shadow-elevation-medium);
   position: relative;
   transition: transform .15s ease-in-out;
-  --text-background-gradient: linear-gradient(to bottom, rgba(0,0,0,0) 75%, rgba(0,0,0,.50)); }
+  --text-background-gradient: linear-gradient(to bottom, rgba(0,0,0,0) 75%, rgba(0,0,0,.50));
+  --background-gradient: radial-gradient(rgb(247, 247, 252), #f3f3ff); }
   .card--lieven {
     --dominant-color: hsl(339, 12%, 86%);
-    background-image: var(--text-background-gradient), url(../img/lieven.png), linear-gradient(to right, var(--dominant-color), var(--dominant-color)); }
+    background-image: var(--text-background-gradient), url(../img/lieven.png), var(--background-gradient); }
   .card--isabelle {
     --dominant-color: hsl(15, 38%, 90%);
-    background-image: var(--text-background-gradient), url(../img/isabelle.png), linear-gradient(to right, var(--dominant-color), var(--dominant-color)); }
+    background-image: var(--text-background-gradient), url(../img/isabelle.png), var(--background-gradient); }
   .card--karen {
     --dominant-color: hsl(344, 12%, 85%);
-    background-image: var(--text-background-gradient), url(../img/karen.png), linear-gradient(to right, var(--dominant-color), var(--dominant-color)); }
+    background-image: var(--text-background-gradient), url(../img/karen.png), var(--background-gradient); }
   .card--nesrin {
     --dominant-color: hsl(35, 46%, 90%);
-    background-image: var(--text-background-gradient), url(../img/nesrin.png), linear-gradient(to right, var(--dominant-color), var(--dominant-color)); }
+    background-image: var(--text-background-gradient), url(../img/nesrin.png), var(--background-gradient); }
   .card--kobe {
     --dominant-color: hsl(90, 7%, 85%);
-    background-image: var(--text-background-gradient), url(../img/kobe.png), linear-gradient(to right, var(--dominant-color), var(--dominant-color)); }
+    background-image: var(--text-background-gradient), url(../img/kobe.png), var(--background-gradient); }
   .card:hover {
     transform: scale(1.05) rotateZ(1deg); }
   .card__title {
@@ -319,8 +320,7 @@ a {
   .address__body {
     text-decoration: none;
     color: inherit;
-    font-size: 2.5rem;
-    font-weight: 300; }
+    font-size: 2.5rem; }
     @media only screen and (max-width: 27em) {
       .address__body {
         font-size: 3rem; } }
@@ -372,7 +372,7 @@ a {
   @media only screen and (max-width: 27em) {
     .price {
       flex-direction: column;
-      padding: 8rem 4rem; } }
+      padding: 12vw 4rem; } }
   .price__amount {
     display: flex;
     flex-direction: column;
@@ -383,7 +383,7 @@ a {
     @media only screen and (max-width: 27em) {
       .price__amount {
         flex-direction: row;
-        margin-bottom: 8rem;
+        margin-bottom: 4rem;
         gap: 2rem; } }
   .price__amount-total {
     --size: 15rem;
@@ -456,7 +456,7 @@ a {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  margin-bottom: 8rem;
+  margin-bottom: 6vw;
   margin-top: 64px;
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
@@ -464,14 +464,15 @@ a {
     .hero-with-content {
       flex-direction: column;
       padding-left: 0 !important;
-      padding-right: 0 !important; } }
+      padding-right: 0 !important;
+      margin-bottom: 12vw;
+      gap: 0; } }
   .hero-with-content__left {
     display: flex;
     flex-direction: column;
     flex: 0 0 40%;
     align-items: center; }
   .hero-with-content__hero {
-    background-size: cover;
     width: 100%;
     height: 50vh; }
     @media only screen and (max-width: 27em) {
@@ -701,7 +702,7 @@ a {
         font-size: 2.5rem; } }
 
 .footer {
-  background-color: #707070;
+  background-color: #4f4f4f;
   padding: 2rem;
   font-size: 1.5rem;
   color: #fafafa; }
@@ -735,36 +736,42 @@ a {
         margin-bottom: 2rem; } }
   .footer__list {
     list-style: none; }
+    @media only screen and (max-width: 27em) {
+      .footer__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; } }
   .footer__item {
     display: inline-block; }
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
   .footer__link:link, .footer__link:visited {
-    color: #fafafa;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block; }
   .footer__copyright {
     padding-top: 1rem;
+    opacity: .75;
     display: inline-block;
     background-color: inherit; }
 
 .section {
-  padding: 12rem calc(50vw - 60ch); }
+  padding: 6vw calc(50vw - 60ch); }
   .section--narrow {
-    padding: 12rem calc(50vw - 40ch); }
+    padding: 6vw calc(50vw - 40ch); }
   .section--wide {
-    padding: 12rem calc(50vw - 80ch); }
+    padding: 6vw calc(50vw - 80ch); }
   .section--dark {
     background-image: linear-gradient(to right bottom, #8484db, #253bb8);
     color: rgba(255, 255, 255, 0.85); }
   @media only screen and (max-width: 27em) {
     .section {
       flex-direction: column;
-      padding: 4rem; } }
+      padding: 12vw 6vw; } }
 
 .section--who-are-we {
-  padding-top: 4rem; }
+  padding-top: 6vw; }
   .section--who-are-we .cards {
     --gap: 4rem;
     --cards-per-row: 5;
@@ -773,12 +780,15 @@ a {
     width: 100%; }
     @media only screen and (max-width: 27em) {
       .section--who-are-we .cards {
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 2rem; } }
+        --gap: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr; } }
     .section--who-are-we .cards .card {
       --cards-per-row: 2;
-      width: calc(100% / var(--cards-per-row) - var(--gap) / 2); }
+      width: calc(100% / var(--cards-per-row) - var(--gap) / var(--cards-per-row)); }
+      @media only screen and (max-width: 27em) {
+        .section--who-are-we .cards .card {
+          width: auto; } }
 
 .how-to-request-section__hero {
   background-image: url(../img/stethoscope.png);

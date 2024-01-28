@@ -4,35 +4,36 @@
   background-size: cover;
   background-position: center;
   aspect-ratio: 3 / 4 ;
-  box-shadow: var(--shadow-elevation-high);
+  box-shadow: var(--shadow-elevation-medium);
   position: relative;
   transition: transform .15s ease-in-out;
 
   --text-background-gradient: linear-gradient(to bottom, rgba(0,0,0,0) 75%, rgba(0,0,0,.50));
+  --background-gradient: radial-gradient(rgb(247, 247, 252), #f3f3ff);
 
   &--lieven {
     --dominant-color: hsl(339, 12%, 86%);
-    background-image: var(--text-background-gradient) , url(../img/lieven.png), linear-gradient(to right, var(--dominant-color), var(--dominant-color));
+    background-image: var(--text-background-gradient) , url(../img/lieven.png), var(--background-gradient);
   }
 
   &--isabelle {
     --dominant-color: hsl(15, 38%, 90%);
-    background-image: var(--text-background-gradient) , url(../img/isabelle.png), linear-gradient(to right, var(--dominant-color), var(--dominant-color));
+    background-image: var(--text-background-gradient) , url(../img/isabelle.png), var(--background-gradient);
   }
 
   &--karen {
     --dominant-color: hsl(344, 12%, 85%);
-    background-image: var(--text-background-gradient) , url(../img/karen.png), linear-gradient(to right, var(--dominant-color), var(--dominant-color));
+    background-image: var(--text-background-gradient) , url(../img/karen.png), var(--background-gradient);
   }
 
   &--nesrin {
     --dominant-color: hsl(35, 46%, 90%);
-    background-image: var(--text-background-gradient) , url(../img/nesrin.png), linear-gradient(to right, var(--dominant-color), var(--dominant-color));
+    background-image: var(--text-background-gradient) , url(../img/nesrin.png), var(--background-gradient);
   }
 
   &--kobe {
     --dominant-color: hsl(90, 7%, 85%);
-    background-image: var(--text-background-gradient) , url(../img/kobe.png), linear-gradient(to right, var(--dominant-color), var(--dominant-color));
+    background-image: var(--text-background-gradient) , url(../img/kobe.png), var(--background-gradient);
   }
 
   &:hover {

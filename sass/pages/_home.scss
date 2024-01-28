@@ -10,14 +10,19 @@
     width: 100%;
 
     @include respond(phone) {
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 2rem;
+      --gap: 2rem;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
 
     .card {
       --cards-per-row: 2;
-      width: calc(100% / var(--cards-per-row) - var(--gap) / 2)
+      width: calc(100% / var(--cards-per-row) - var(--gap) / var(--cards-per-row));
+
+      @include respond(phone) {
+        width: auto;
+      }
     }
   }
 }
