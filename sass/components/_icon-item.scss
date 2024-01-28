@@ -24,12 +24,18 @@
   &__icon {
     color: inherit;
     fill: currentColor;
+    opacity: .75;
     height: 8rem;
     margin-bottom: 1rem;
   }
 
   &__title {
     text-align: center;
+    font-size: 2rem;
+
+    @include respond(phone) {
+      font-size: 2.5rem;
+    }
   }
 
   &__body {

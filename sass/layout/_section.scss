@@ -1,0 +1,21 @@
+.section {
+  padding: $padding-large calc(50vw - 60ch);
+
+  &--narrow {
+    padding: $padding-large calc(50vw - 40ch);
+  }
+
+  &--wide {
+    padding: $padding-large calc(50vw - 80ch);
+  }
+
+  &--dark {
+    background-image: $primary-gradient;
+    color: rgba($color-white, .85);
+  }
+
+  @include respond(phone) {
+    flex-direction: column;
+    padding: $padding-small;
+  }
+}

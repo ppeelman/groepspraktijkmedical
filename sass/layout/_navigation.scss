@@ -141,6 +141,8 @@
   }
 
   &__link {
+    border-radius: 1rem;
+
     &:link,
     &:visited {
       text-decoration: none;
@@ -154,6 +156,7 @@
     &:hover,
     &:active {
       border: 2px solid $color-white;
+      background-color: rgba($color-white, .1);
     }
   }
 
@@ -183,6 +186,7 @@
     &::after {
       position: absolute;
       background-color: $color-white;
+      box-shadow: var(--shadow-elevation-high);
       width: calc(#{$hamburger-button-diameter-large} - 3rem);
       height: 3px;
       display: inline-block;
@@ -199,6 +203,7 @@
     &--navbar::after {
       height: 3px;
       width: calc(#{$hamburger-button-diameter-small} - 2rem);
+      background-color: black;
     }
 
     &::before,
@@ -241,34 +246,38 @@
 .navbar {
   height: $navbar-height;
   width: 100%;
-  background-color: $color-primary-dark;
-  //background-image: linear-gradient(
-  //  to bottom,
-  //  $color-primary-light,
-  //  $color-primary-dark
-  //);
+  background-color: white;
+  opacity: .90;
+  backdrop-filter: blur(10000px);
   position: fixed;
   top: 0;
   z-index: 900;
-  opacity: 0.95;
   display: flex;
   align-items: center;
   text-align: center;
   box-shadow: $shadow-medium;
-  
+
+
+  &__logo-container {
+    height: 80%;
+  }
 
   &__logo {
-    height: 80%;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg)
-      brightness(106%) contrast(106%);
+    height: 100%;
   }
 
   &__pageTitle {
-    color: $color-white;
-    font-weight: 400;
-    font-size: 2.5rem;
+    color: black;
+    font-weight: 700;
+    font-size: 2rem;
+    opacity: .75;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+
+
+    @include respond(phone) {
+      font-size: 2.5rem;
+    }
   }
 }

@@ -9,13 +9,11 @@
     align-items: center;
   }
   
-
   &__logo-box {
     width: 15rem;
 
       @include respond(phone) {
         width: 50%;
-        margin-bottom: 4rem;
       }
   }
 
@@ -25,12 +23,13 @@
     height: auto;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg)
       brightness(106%) contrast(106%);
+
   }
 
   &__container {
     display: flex;
     flex-direction: row;
-    padding: 5rem;
+    padding: 2rem 5rem;
     justify-content: space-between;
     align-items: center;
 
@@ -40,12 +39,11 @@
   }
 
   &__navigation {
-    border-top: 1px solid $color-grey-light;
-    padding-top: 2rem;
+    padding-top: 1rem;
     display: inline-block;
 
     @include respond(phone) {
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
     }
   }
 
@@ -72,8 +70,7 @@
   }
 
   &__copyright {
-    border-top: 1px solid $color-grey-light;
-    padding-top: 2rem;
+    padding-top: 1rem;
     display: inline-block;
     background-color: inherit;
   }

@@ -1,17 +1,13 @@
 .how-to-request-huisbezoeken-section {
+  padding-top: 0;
+  padding-bottom: 0;
 
   &__hero {
-    background-image: linear-gradient(
-        to right,
-        transparent 50%,
-        $color-grey-light 100%
-      ),
-      linear-gradient(to bottom, transparent 50%, $color-grey-light 100%),
-      url(../img/injury-teddy.jpg);
-
-    @include respond(phone) {
-      background-image: url(../img/injury-teddy.jpg);
-    }
+    background-image: url(../img/injury-teddy.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 2rem;
   }
 }
   

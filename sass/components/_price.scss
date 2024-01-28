@@ -1,10 +1,7 @@
 .price {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  background-color: rgba($color-primary-dark, 0.7);
-  color: $color-grey-light;
-  padding: $padding-medium 0rem;
+  gap: 5%;
 
   @include respond(phone) {
     flex-direction: column;
@@ -16,17 +13,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
     flex: 0 0 20%;
 
     @include respond(phone) {
+      flex-direction: row;
       margin-bottom: 8rem;
+      gap: 2rem;
     }
   }
 
   &__amount-total {
+    --size: 15rem;
     border-radius: 50%;
-    width: 15rem;
-    height: 15rem;
+    width: var(--size);
+    height: var(--size);
     background-color: $color-grey-light;
     display: flex;
     align-items: center;
@@ -36,32 +37,26 @@
     font-size: 2.5rem;
     margin-bottom: 2rem;
 
+    &--special {
+      --size: 7.5rem !important;
+      font-size: 1.5rem;
+      background-color: transparent;
+      color: white;
+      border: 1px dashed white;
+
+      @include respond(phone) {
+        --size: 10rem !important;
+        font-size: 2rem !important;
+      }
+    }
+
     @include respond(phone) {
-      width: 20rem;
-      height: 20rem;
+      --size: 20rem;
       font-size: 4rem;
     }
   }
 
   &__explanation {
-    flex: 0 0 40%;
-  }
-
-  &__image {
-    background-image: linear-gradient(
-        to right,
-        rgba($color-primary-dark, 0.7),
-        rgba($color-primary-dark, 0.7)
-      ),
-      url(../img/coins.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    flex: 0 0 40%;
-
-    @include respond(phone) {
-      height: 200px;
-      width: 100%;
-    }
+    flex: 1 1 80%;
   }
 }

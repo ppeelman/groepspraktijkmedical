@@ -1,208 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+            rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 
     <title>
-      Raadplegingen - Groepspraktijk Medical
+        Raadplegingen - Groepspraktijk Medical
     </title>
-  </head>
+</head>
 
-  <body>
-    <div class="sidenav">
-      <input type="checkbox" class="sidenav__checkbox" id="sidenav-toggle" />
-      <label
-        class="sidenav__button sidenav__button--navbar"
-        for="sidenav-toggle"
-      >
+<body>
+<div class="sidenav">
+    <input type="checkbox" class="sidenav__checkbox" id="sidenav-toggle"/>
+    <label
+            class="sidenav__button sidenav__button--navbar"
+            for="sidenav-toggle"
+    >
         <div class="sidenav__icon sidenav__icon--navbar"></div>
-      </label>
+    </label>
 
-      <div class="sidenav__background sidenav__background--navbar "></div>
+    <div class="sidenav__background sidenav__background--navbar "></div>
 
-      <div class="sidenav__list-container">
+    <div class="sidenav__list-container">
         <ul class="sidenav__list">
-          <li class="sidenav__item">
-            <a href="index.html" class="sidenav__link">Home</a>
-          </li>
-          <li class="sidenav__item">
-            <a href="raadplegingen.html" class="sidenav__link">Raadplegingen</a>
-          </li>
-          <li class="sidenav__item">
-            <a href="huisbezoeken.html" class="sidenav__link">Huisbezoeken</a>
-          </li>
-          <li class="sidenav__item">
-            <a href="wachtdienst.html" class="sidenav__link">Wachtdienst</a>
-          </li>
+            <li class="sidenav__item">
+                <a href="index.html" class="sidenav__link">Home</a>
+            </li>
+            <li class="sidenav__item">
+                <a href="raadplegingen.html" class="sidenav__link">Raadplegingen</a>
+            </li>
+            <li class="sidenav__item">
+                <a href="huisbezoeken.html" class="sidenav__link">Huisbezoeken</a>
+            </li>
+            <li class="sidenav__item">
+                <a href="wachtdienst.html" class="sidenav__link">Wachtdienst</a>
+            </li>
         </ul>
-      </div>
     </div>
+</div>
 
-    <nav class="navbar">
-      <img src="img/logo.svg" alt="logo" class="navbar__logo" />
-      <h1 class="navbar__pageTitle">Raadplegingen</h1>
-    </nav>
+<nav class="navbar">
+    <a class="navbar__logo-container" href="index.html">
+        <img class="navbar__logo" src="img/logo.svg" alt="logo" />
+    </a>
+    <h1 class="navbar__pageTitle">Raadplegingen</h1>
+</nav>
 
-    <main>
-      <section class="how-to-request-section hero-with-content">
+<main>
+    <section class="section how-to-request-section hero-with-content">
         <div class="hero-with-content__left">
-          <div
-            class="hero-with-content__hero how-to-request-section__hero"
-          ></div>
+            <div
+                    class="hero-with-content__hero how-to-request-section__hero"
+            ></div>
         </div>
         <div class="hero-with-content__right">
-          <div class="request-online u-margin-bottom-xl">
-            <div class="icon-heading">
-              <svg class="icon-heading__icon">
-                <use xlink:href="img/sprite.svg#desktop"></use>
-              </svg>
-              <h2 class="heading-secondary icon-heading__text">Online</h2>
+            <div class="request-online u-margin-bottom-xl">
+                <h2 class="heading-secondary">Online</h2>
+                <p class="u-margin-bottom-lg">
+                    U kan gemakkelijk
+                    <strong class="u-bold">online</strong> een afspraak te maken.
+                    Hierdoor krijgt u een beter zicht op onze beschikbaarheden en wint
+                    u enige tijd. U plant een afspraak door op onderstaande link te
+                    drukken:
+                </p>
+                <a
+                        href="https://secure.introlution.be/mijnonlineagenda/?groepspraktijkmedical.be"
+                        class="btn btn--blue btn--small"
+                >Maak een afspraak</a
+                >
             </div>
-            <p class="u-margin-bottom-lg">
-              Sinds kort is het mogelijk om
-              <strong class="u-bold">online</strong> een afspraak te maken.
-              Hierdoor krijgt u een beter zicht op onze beschikbaarheden en wint
-              u enige tijd. U plant een afspraak door op onderstaande link te
-              drukken:
-            </p>
-            <a
-              href="https://secure.introlution.be/mijnonlineagenda/?groepspraktijkmedical.be"
-              class="btn btn--blue btn--small"
-              >Maak een afspraak</a
-            >
-          </div>
-          <div class="request-telephone">
-            <div class="icon-heading">
-              <svg class="icon-heading__icon">
-                <use xlink:href="img/sprite.svg#phone"></use>
-              </svg>
-              <h2 class="heading-secondary icon-heading__text">Telefonisch</h2>
+            <div class="request-telephone">
+                <h2 class="heading-secondary">Telefonisch</h2>
+                <p>
+                    U kan ons bereiken op het nummer
+                    <a class="telephone" href="tel:093489168">09 348 91 68</a>. Graag
+                    bellen voor afspraken in de voormiddag tussen 8u en 12u. Vermeld
+                    zeker uw naam, het soort onderzoek dat u wenst (bloedafname,
+                    cardiogram, gesprek...) en uw voorkeur van dokter en tijdstip.
+                </p>
             </div>
-            <p>
-              U kan ons bereiken op het nummer
-              <a class="telephone" href="tel:093489168">09 348 91 68</a>. Graag
-              bellen voor afspraken in de voormiddag tussen 8u en 12u. Vermeld
-              zeker uw naam, het soort onderzoek dat u wenst (bloedafname,
-              cardiogram, gesprek...) en uw voorkeur van dokter en tijdstip.
-            </p>
-          </div>
         </div>
-      </section>
-      <section class="price">
+    </section>
+    <section class="section section--dark price">
         <div class="price__amount">
-          <div class="price__amount-total">€ 4</div>
+            <div class="price__amount-total">€ 4</div>
+            <div class="price__amount-total price__amount-total--special">€ 0 - 1*</div>
         </div>
         <div class="price__explanation">
-          <h2 class="heading-secondary heading-secondary--light">
-            Hoeveel kost het?
-          </h2>
-          <p class="u-margin-bottom-md">
-            Wij hanteren voor iedereen de derdebetalersregeling. Dit betekent dat u enkel het remgeld betaalt. Dit bedraagt voor een consultatie 
-            <strong class="u-bold">4 euro</strong> (wanneer u een GMD hebt). Het resterende bedrag wordt elektronisch aan de mutualiteit gevraagd
-            (e-facturatie) met de gegevens van uw identiteitskaart.
-          </p>
+            <h2 class="heading-secondary heading-secondary--light">
+                Hoeveel kost het?
+            </h2>
+
+            <p class="u-margin-bottom-md">Wij hanteren voor iedereen de derdebetalersregeling. Dit betekent dat u enkel
+                het remgeld betaalt.</p>
+
+            <ul class="u-margin-bottom-md" style="margin-left: 3rem;">
+                <li>Wanneer u een GMD hebt, bedraagt dit <strong class="u-bold">4 euro</strong>.</li>
+                <li>Indien u in aanmerking komt voor verhoogde tegemoetkoming is het tarief <strong class="u-bold">1
+                    euro</strong> (of zelfs 0 euro, indien jonger dan 25).
+                </li>
+            </ul>
+            <div class="info u-margin-bottom-lg">
+                <p class="info__text">Jongeren tot 25 jaar die in aanmerking komen voor verhoogde tegemoetkoming en een
+                    GMD in de praktijk hebben <a
+                            href="https://www.riziv.fgov.be/nl/nieuws/het-riziv-vergoedt-doktersbezoek-volledig-voor-financieel-kwetsbare-kinderen-en-jongeren">betalen
+                        geen remgeld.</a></p>
+            </div>
+            <p class="u-margin-bottom-lg">
+                Het resterende bedrag wordt elektronisch aan de mutualiteit gevraagd (e-facturatie) met de gegevens van
+                uw identiteitskaart.
+            </p>
         </div>
-        <div class="price__image"></div>
-      </section>
-      <section class="take-along-section">
+    </section>
+    <section class="section take-along-section">
         <h2 class="heading-secondary heading-secondary--text">Wat meenemen?</h2>
         <div class="icon-item">
-          <svg class="icon-item__icon">
-            <use xlink:href="img/sprite.svg#pass"></use>
-          </svg>
-          <h3 class="icon-item__title">Uw identiteitskaart</h3>
+            <svg class="icon-item__icon">
+                <use xlink:href="img/sprite.svg#pass"></use>
+            </svg>
+            <h3 class="icon-item__title">Uw identiteitskaart</h3>
         </div>
         <div class="icon-item">
-          <svg class="icon-item__icon">
-            <use xlink:href="img/sprite.svg#paper"></use>
-          </svg>
-          <h3 class="icon-item__title">
-            Een briefje met de geneesmiddelen die u neemt
-          </h3>
+            <svg class="icon-item__icon">
+                <use xlink:href="img/sprite.svg#paper"></use>
+            </svg>
+            <h3 class="icon-item__title">
+                Een briefje met de geneesmiddelen die u neemt
+            </h3>
         </div>
-      </section>
-      <section class="be-aware-section">
+    </section>
+    <section class="section section--dark be-aware-section">
         <h2 class="heading-secondary heading-secondary--light">
-          Waarop letten?
+            Waarop letten?
         </h2>
         <div class="icon-items-container">
-          <div class="icon-item icon-item--light">
-            <svg class="icon-item__icon">
-              <use xlink:href="img/sprite.svg#time"></use>
-            </svg>
-            <h3 class="icon-item__title">Wees op tijd</h3>
-            <p class="icon-item__body">
-              Bent u verhinderd, laat het ons dan ook tijdig weten. Iemand
-              anders kan uw plaats innemen.
-            </p>
-          </div>
-          <div class="icon-item icon-item--light">
-            <svg class="icon-item__icon">
-              <use xlink:href="img/sprite.svg#group"></use>
-            </svg>
-            <h3 class="icon-item__title">Aantal personen</h3>
-            <p class="icon-item__body">
-              Komt u met meer dan 1 persoon, vraag dan ook meerdere afspraken.
-            </p>
-          </div>
-          <div class="icon-item icon-item--light">
-            <svg class="icon-item__icon">
-              <use xlink:href="img/sprite.svg#tablet"></use>
-            </svg>
-            <h3 class="icon-item__title">Chronische medicatie</h3>
-            <p class="icon-item__body">
-              Kijk vooraf welke chronische medicatie u nodig heeft, zo kan uw
-              arts u voldoende voorschrijven.
-            </p>
-          </div>
-          <div class="icon-item icon-item--light">
-            <svg class="icon-item__icon">
-              <use xlink:href="img/sprite.svg#book"></use>
-            </svg>
-            <h3 class="icon-item__title">Voorbereiding</h3>
-            <p class="icon-item__body">
-              Bereid uw consultatie voor, schrijf desnoods een paar zaken op een
-              briefje.
-            </p>
-          </div>
+            <div class="icon-item icon-item--light">
+                <svg class="icon-item__icon">
+                    <use xlink:href="img/sprite.svg#time"></use>
+                </svg>
+                <h3 class="icon-item__title">Wees op tijd</h3>
+                <p class="icon-item__body">
+                    Bent u verhinderd, laat het ons dan ook tijdig weten. Iemand
+                    anders kan uw plaats innemen.
+                </p>
+            </div>
+            <div class="icon-item icon-item--light">
+                <svg class="icon-item__icon">
+                    <use xlink:href="img/sprite.svg#group"></use>
+                </svg>
+                <h3 class="icon-item__title">Aantal personen</h3>
+                <p class="icon-item__body">
+                    Komt u met meer dan 1 persoon, vraag dan ook meerdere afspraken.
+                </p>
+            </div>
+            <div class="icon-item icon-item--light">
+                <svg class="icon-item__icon">
+                    <use xlink:href="img/sprite.svg#tablet"></use>
+                </svg>
+                <h3 class="icon-item__title">Chronische medicatie</h3>
+                <p class="icon-item__body">
+                    Kijk vooraf welke chronische medicatie u nodig heeft, zo kan uw
+                    arts u voldoende voorschrijven.
+                </p>
+            </div>
+            <div class="icon-item icon-item--light">
+                <svg class="icon-item__icon">
+                    <use xlink:href="img/sprite.svg#book"></use>
+                </svg>
+                <h3 class="icon-item__title">Voorbereiding</h3>
+                <p class="icon-item__body">
+                    Bereid uw consultatie voor, schrijf desnoods een paar zaken op een
+                    briefje.
+                </p>
+            </div>
         </div>
-      </section>
-    </main>
+    </section>
+</main>
 
-    <footer class="footer">
-      <div class="footer__container">
+<footer class="footer">
+    <div class="footer__container">
         <div class="footer__logo-box">
-          <img src="img/logo.svg" alt="Full logo" class="footer__logo" />
+            <img src="img/logo.svg" alt="Full logo" class="footer__logo"/>
         </div>
         <div class="footer__navigation">
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="index.html" class="footer__link">Home</a>
-            </li>
-            <li class="footer__item">
-              <a href="raadplegingen.html" class="footer__link"
-                >Raadplegingen</a
-              >
-            </li>
-            <li class="footer__item">
-              <a href="huisbezoeken.html" class="footer__link">Huisbezoeken</a>
-            </li>
-          </ul>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="index.html" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                    <a href="raadplegingen.html" class="footer__link"
+                    >Raadplegingen</a
+                    >
+                </li>
+                <li class="footer__item">
+                    <a href="huisbezoeken.html" class="footer__link">Huisbezoeken</a>
+                </li>
+                <li class="footer__item">
+                    <a href="wachtdients.html" class="footer__link">Wachtdienst</a>
+                </li>
+            </ul>
         </div>
 
         <div class="footer__copyright">
-          <p>Designed and handcrafted by Philippe Peelman.</p>
-          <p>Copyright 2019 © by Groepspraktijk Medical.</p>
+            <p>Designed and handcrafted by Philippe Peelman.</p>
+            <p>Copyright 2024 © by Groepspraktijk Medical.</p>
         </div>
-      </div>
-    </footer>
-  </body>
+    </div>
+</footer>
+</body>
 </html>

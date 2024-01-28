@@ -1,0 +1,14 @@
+.info {
+  display: flex;
+  align-items: center;
+  color: $color-white;
+  background-color: rgba($color-white, .1);
+  padding: 2rem 1rem;
+  border-radius: $border-radius-large;
+  font-weight: 500;
+  border: 1px solid white;
+
+  &__text {
+    margin-left: 2rem;
+  }
+}
