@@ -480,8 +480,10 @@ a {
         height: 40vh; } }
   .hero-with-content__right {
     flex: 0 0 60%;
-    padding: 4rem;
-    padding-bottom: 0; }
+    padding-top: 4rem; }
+    @media only screen and (max-width: 27em) {
+      .hero-with-content__right {
+        padding: 0 6vw; } }
     .hero-with-content__right > *:not(:last-child) {
       margin-bottom: 10rem; }
 

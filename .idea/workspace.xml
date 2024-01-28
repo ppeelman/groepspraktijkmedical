@@ -5,23 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="078df689-e842-46a3-95e3-4e90f51baaab" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/css/style.comp.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.comp.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.concat.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.concat.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.prefix.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.prefix.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/kobe.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/kobe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/stethoscope.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/stethoscope.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raadplegingen.html" beforeDir="false" afterPath="$PROJECT_DIR$/raadplegingen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/abstracts/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/abstracts/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/components/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_card.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/components/_hero-with-content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_hero-with-content.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/components/_panel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_panel.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/components/_price.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_price.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layout/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layout/_section.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_section.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/pages/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/pages/_home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wachtdienst.html" beforeDir="false" afterPath="$PROJECT_DIR$/wachtdienst.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +65,7 @@
       <workItem from="1665419858011" duration="464000" />
       <workItem from="1665420838439" duration="603000" />
       <workItem from="1665824045181" duration="3222000" />
-      <workItem from="1706349022488" duration="24561000" />
+      <workItem from="1706349022488" duration="24931000" />
     </task>
     <task id="LOCAL-00001" summary="aanpassingen website 2024">
       <option name="closed" value="true" />
@@ -90,7 +75,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706434774000</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="small tweaks">
+      <option name="closed" value="true" />
+      <created>1706444702490</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706444702490</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +129,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="aanpassingen website 2024" />
-    <option name="LAST_COMMIT_MESSAGE" value="aanpassingen website 2024" />
+    <MESSAGE value="small tweaks" />
+    <option name="LAST_COMMIT_MESSAGE" value="small tweaks" />
   </component>
 </project>

@@ -33,8 +33,11 @@
 
   &__right {
     flex: 0 0 60%;
-    padding: 4rem;
-    padding-bottom: 0;
+    padding-top: 4rem;
+
+    @include respond(phone) {
+      padding: 0 $padding-small;
+    }
 
     & > *:not(:last-child) {
       margin-bottom: 10rem;
