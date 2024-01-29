@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="078df689-e842-46a3-95e3-4e90f51baaab" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/components/_hero-with-content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_hero-with-content.scss" afterDir="false" />
+    <list default="true" id="078df689-e842-46a3-95e3-4e90f51baaab" name="Changes" comment="fix padding hero-with-content component">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +64,7 @@
       <workItem from="1665419858011" duration="464000" />
       <workItem from="1665420838439" duration="603000" />
       <workItem from="1665824045181" duration="3222000" />
-      <workItem from="1706349022488" duration="24931000" />
+      <workItem from="1706349022488" duration="26041000" />
     </task>
     <task id="LOCAL-00001" summary="aanpassingen website 2024">
       <option name="closed" value="true" />
@@ -83,7 +82,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706444702490</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix padding hero-with-content component">
+      <option name="closed" value="true" />
+      <created>1706445095103</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706445095103</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +137,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="aanpassingen website 2024" />
     <MESSAGE value="small tweaks" />
-    <option name="LAST_COMMIT_MESSAGE" value="small tweaks" />
+    <MESSAGE value="fix padding hero-with-content component" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix padding hero-with-content component" />
   </component>
 </project>
