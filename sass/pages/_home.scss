@@ -3,9 +3,10 @@
 
   .cards {
     --gap: 4rem;
-    --cards-per-row: 5;
 
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: var(--gap);
     width: 100%;
 
@@ -17,8 +18,7 @@
     }
 
     .card {
-      --cards-per-row: 2;
-      width: calc(100% / var(--cards-per-row) - var(--gap) / var(--cards-per-row));
+      width: 30ch;
 
       @include respond(phone) {
         width: auto;

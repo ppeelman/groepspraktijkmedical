@@ -36,6 +36,11 @@
     background-image: var(--text-background-gradient) , url(../img/kobe.png), var(--background-gradient);
   }
 
+  &--zita {
+    --dominant-color: hsl(90, 7%, 85%);
+    background-image: var(--text-background-gradient) , url(../img/zita.png), var(--background-gradient);
+  }
+
   &:hover {
     transform: scale(1.05) rotateZ(1deg);
   }
