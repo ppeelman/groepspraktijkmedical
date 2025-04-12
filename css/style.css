@@ -247,7 +247,7 @@ a {
   box-shadow: var(--shadow-elevation-medium);
   position: relative;
   transition: transform .15s ease-in-out;
-  --text-background-gradient: linear-gradient(to bottom, rgba(0,0,0,0) 65%, rgba(0,0,0,.70));
+  --text-background-gradient: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.10) 75%, rgba(0,0,0,.30));
   --background-gradient: radial-gradient(rgb(247, 247, 252), #f3f3ff); }
   .card--lieven {
     --dominant-color: hsl(339, 12%, 86%);
@@ -261,9 +261,9 @@ a {
   .card--nesrin {
     --dominant-color: hsl(35, 46%, 90%);
     background-image: var(--text-background-gradient), url(../img/nesrin.png), var(--background-gradient); }
-  .card--kobe {
+  .card--gaelle {
     --dominant-color: hsl(90, 7%, 85%);
-    background-image: var(--text-background-gradient), url(../img/kobe.png), var(--background-gradient); }
+    background-image: var(--text-background-gradient), url(../img/gaelle.png), var(--background-gradient); }
   .card--zita {
     --dominant-color: hsl(90, 7%, 85%);
     background-image: var(--text-background-gradient), url(../img/zita.png), var(--background-gradient); }
@@ -277,7 +277,8 @@ a {
     margin: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    text-shadow: 0 0 2px black; }
   .card__title {
     color: white;
     font-size: 2.5rem;
@@ -285,8 +286,7 @@ a {
     margin-bottom: 0; }
   .card__subtitle {
     color: white;
-    font-size: 1.85rem;
-    opacity: .8;
+    font-size: 1.8rem;
     line-height: 110%;
     margin-bottom: 1rem; }
 

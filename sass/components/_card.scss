@@ -8,7 +8,7 @@
   position: relative;
   transition: transform .15s ease-in-out;
 
-  --text-background-gradient: linear-gradient(to bottom, rgba(0,0,0,0) 65%, rgba(0,0,0,.70));
+  --text-background-gradient: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.10) 75%, rgba(0,0,0,.30));
   --background-gradient: radial-gradient(rgb(247, 247, 252), #f3f3ff);
 
   &--lieven {
@@ -31,9 +31,9 @@
     background-image: var(--text-background-gradient) , url(../img/nesrin.png), var(--background-gradient);
   }
 
-  &--kobe {
+  &--gaelle {
     --dominant-color: hsl(90, 7%, 85%);
-    background-image: var(--text-background-gradient) , url(../img/kobe.png), var(--background-gradient);
+    background-image: var(--text-background-gradient) , url(../img/gaelle.png), var(--background-gradient);
   }
 
   &--zita {
@@ -54,6 +54,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-shadow: 0 0 2px black;
   }
 
   &__title {
@@ -65,8 +66,7 @@
 
   &__subtitle {
     color: white;
-    font-size: 1.85rem;
-    opacity: .8;
+    font-size: 1.8rem;
     line-height: 110%;
     margin-bottom: 1rem;
   }
