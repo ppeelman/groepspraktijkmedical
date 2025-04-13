@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="078df689-e842-46a3-95e3-4e90f51baaab" name="Changes" comment="remove kobe and add gaelle">
+    <list default="true" id="078df689-e842-46a3-95e3-4e90f51baaab" name="Changes" comment="fix map embed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +93,7 @@
       <workItem from="1732636314599" duration="17000" />
       <workItem from="1739020478423" duration="1939000" />
       <workItem from="1744457594782" duration="75000" />
-      <workItem from="1744457688870" duration="1653000" />
+      <workItem from="1744457688870" duration="3095000" />
     </task>
     <task id="LOCAL-00001" summary="aanpassingen website 2024">
       <option name="closed" value="true" />
@@ -176,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744458842759</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix map embed">
+      <option name="closed" value="true" />
+      <created>1744459518098</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1744459518098</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +240,7 @@
     <MESSAGE value=":sparkles: feat: add favicon (2)" />
     <MESSAGE value="aanpassingen wachtdienst + vermelding HAIO bij Kobe en Zita" />
     <MESSAGE value="remove kobe and add gaelle" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove kobe and add gaelle" />
+    <MESSAGE value="fix map embed" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix map embed" />
   </component>
 </project>
